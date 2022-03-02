@@ -764,6 +764,29 @@
             "rid": "win"
           }
         }
+      },
+      "CarPartsShoppingList.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "CarPartsShoppingList.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/CarPartsShoppingList.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarPartsShoppingList.Core.dll": {}
+        }
+      },
+      "CarPartsShoppingList.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/CarPartsShoppingList.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/CarPartsShoppingList.Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -2253,10 +2276,21 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "CarPartsShoppingList.Core/1.0.0": {
+      "type": "project",
+      "path": "../CarPartsShoppingList.Core/CarPartsShoppingList.Core.csproj",
+      "msbuildProject": "../CarPartsShoppingList.Core/CarPartsShoppingList.Core.csproj"
+    },
+    "CarPartsShoppingList.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../CarPartsShoppingList.Infrastructure/CarPartsShoppingList.Infrastructure.csproj",
+      "msbuildProject": "../CarPartsShoppingList.Infrastructure/CarPartsShoppingList.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CarPartsShoppingList.Core >= 1.0.0",
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 6.0.2",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.2",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.2",
@@ -2290,7 +2324,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj": {
+              "projectPath": "D:\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

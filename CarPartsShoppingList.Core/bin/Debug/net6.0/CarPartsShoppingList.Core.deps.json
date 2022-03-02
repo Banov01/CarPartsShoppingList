@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "CarPartsShoppingList.Core/1.0.0": {
+        "dependencies": {
+          "CarPartsShoppingList.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "CarPartsShoppingList.Core.dll": {}
+        }
+      },
+      "CarPartsShoppingList.Infrastructure/1.0.0": {
+        "runtime": {
+          "CarPartsShoppingList.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CarPartsShoppingList.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CarPartsShoppingList.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

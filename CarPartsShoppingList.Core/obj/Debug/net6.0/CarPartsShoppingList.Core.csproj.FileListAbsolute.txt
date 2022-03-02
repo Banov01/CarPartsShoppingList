@@ -1,0 +1,15 @@
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\bin\Debug\net6.0\CarPartsShoppingList.Core.deps.json
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\bin\Debug\net6.0\CarPartsShoppingList.Core.dll
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\bin\Debug\net6.0\ref\CarPartsShoppingList.Core.dll
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\bin\Debug\net6.0\CarPartsShoppingList.Core.pdb
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\bin\Debug\net6.0\CarPartsShoppingList.Infrastructure.dll
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\bin\Debug\net6.0\CarPartsShoppingList.Infrastructure.pdb
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\obj\Debug\net6.0\CarPartsShoppingList.Core.csproj.AssemblyReference.cache
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\obj\Debug\net6.0\CarPartsShoppingList.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\obj\Debug\net6.0\CarPartsShoppingList.Core.AssemblyInfoInputs.cache
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\obj\Debug\net6.0\CarPartsShoppingList.Core.AssemblyInfo.cs
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\obj\Debug\net6.0\CarPartsShoppingList.Core.csproj.CoreCompileInputs.cache
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\obj\Debug\net6.0\CarPartsShoppingList.Core.csproj.CopyComplete
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\obj\Debug\net6.0\CarPartsShoppingList.Core.dll
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\obj\Debug\net6.0\ref\CarPartsShoppingList.Core.dll
+D:\web proj\CarPartsShoppingList\CarPartsShoppingList.Core\obj\Debug\net6.0\CarPartsShoppingList.Core.pdb
