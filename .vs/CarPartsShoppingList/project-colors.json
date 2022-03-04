@@ -20,7 +20,17 @@
       "ProjectGuid": "274b4d66-f811-47c0-89a3-592954583ac4",
       "DisplayName": "CarPartsShoppingList.Infrastructure",
       "ColorIndex": 2
+    },
+    "171b33dd-6420-4123-9fca-bd0c83d67a88": {
+      "ProjectGuid": "171b33dd-6420-4123-9fca-bd0c83d67a88",
+      "DisplayName": "CarPartsShoppingList.Core",
+      "ColorIndex": 3
+    },
+    "ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c": {
+      "ProjectGuid": "ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c",
+      "DisplayName": "CarPartsShoppingList.Infrastructure",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 3
+  "NextColorIndex": 5
 }

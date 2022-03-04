@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj": {}
+    "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj": {}
   },
   "projects": {
-    "D:\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj": {
+    "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
+        "projectUniqueName": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
         "projectName": "CarPartsShoppingList.Infrastructure",
-        "projectPath": "D:\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
+        "projectPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
-        "outputPath": "D:\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\obj\\",
+        "outputPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",

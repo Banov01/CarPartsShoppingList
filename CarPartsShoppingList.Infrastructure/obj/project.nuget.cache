@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "C/HB3NU3KTYhRuY0zq3vNdRbg3LyMXLtml5EeMYD+boLY50o+wX30q63tDacqXhTnUaCE4oqWZIDNFDIV5bgfw==",
+  "dgSpecHash": "KQsAI288zz3sxbWGXES+gAi0/BmpbcSMHbu3q4zpf8d8oda1hT5NbarnG9fEM4QIXp0yysVlzEvGgZGxu9/wxg==",
   "success": true,
-  "projectFilePath": "D:\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
+  "projectFilePath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
