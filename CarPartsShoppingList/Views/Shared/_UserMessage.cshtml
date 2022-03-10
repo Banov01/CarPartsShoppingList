@@ -20,12 +20,12 @@
     </script>
 }
 
-@if (ViewData[MessageConstant.SuccsessMessage] != null)
+@if (ViewData[MessageConstant.SuccessMessage] != null)
 {
     <script>
 
         $(function(){
-            toastr.succsess('@ViewData[MessageConstant.SuccsessMessage]?.ToString()');
+            toastr.succsess('@ViewData[MessageConstant.SuccessMessage]?.ToString()');
         });
     </script>
 }
