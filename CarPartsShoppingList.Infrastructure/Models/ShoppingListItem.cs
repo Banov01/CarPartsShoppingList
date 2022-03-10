@@ -5,7 +5,7 @@ namespace CarPartsShoppingList.Infrastructure.Models
 {
     [Table("shopping_list_items")]
     [DisplayName("ShoppingListItems")]
-    public class ShoppingListItem
+    public class ShoppingListItem : BaseModel
     {
         public int? ShoppingListId { get; set; }
         public int? EngineId { get; set;}

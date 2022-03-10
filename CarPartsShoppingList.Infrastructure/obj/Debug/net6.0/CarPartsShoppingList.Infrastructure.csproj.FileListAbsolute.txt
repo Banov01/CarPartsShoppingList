@@ -38,3 +38,17 @@ C:\work\CarShoppingList\CarPartsShoppingList\CarPartsShoppingList.Infrastructure
 C:\work\CarShoppingList\CarPartsShoppingList\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.pdb
 C:\work\CarShoppingList\CarPartsShoppingList\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.genruntimeconfig.cache
 C:\work\CarShoppingList\CarPartsShoppingList\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\ref\CarPartsShoppingList.Infrastructure.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\bin\Debug\net6.0\CarPartsShoppingList.Infrastructure.deps.json
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\bin\Debug\net6.0\CarPartsShoppingList.Infrastructure.runtimeconfig.json
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\bin\Debug\net6.0\CarPartsShoppingList.Infrastructure.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\bin\Debug\net6.0\CarPartsShoppingList.Infrastructure.pdb
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.AssemblyInfo.cs
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\refint\CarPartsShoppingList.Infrastructure.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.pdb
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\CarPartsShoppingList.Infrastructure.genruntimeconfig.cache
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Infrastructure\obj\Debug\net6.0\ref\CarPartsShoppingList.Infrastructure.dll

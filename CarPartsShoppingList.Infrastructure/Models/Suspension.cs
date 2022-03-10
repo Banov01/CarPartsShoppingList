@@ -5,7 +5,7 @@ namespace CarPartsShoppingList.Infrastructure.Models
 {
     [Table("suspensions")]
     [DisplayName("Suspension")]
-    public class Suspension
+    public class Suspension : BaseModel
     {
 
     }

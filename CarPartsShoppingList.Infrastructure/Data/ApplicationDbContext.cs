@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using CarPartsShoppingList.Infrastructure.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarPartsShoppingList.Data
@@ -9,5 +10,10 @@ namespace CarPartsShoppingList.Data
             : base(options)
         {
         }
+        DbSet<Engine> Engines { get; set; }
+        DbSet<ShoppingList> ShoppingLists { get; set; }
+        DbSet<ShoppingListItem> ShoppingListItmes { get; set; }
+        DbSet<Suspension> Suspensions { get; set; }
+        DbSet<Transmission> Transmissions { get; set; }
     }
 }
