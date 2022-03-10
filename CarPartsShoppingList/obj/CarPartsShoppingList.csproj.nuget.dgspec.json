@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList\\CarPartsShoppingList.csproj": {}
+    "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\CarPartsShoppingList.csproj": {}
   },
   "projects": {
-    "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj": {
+    "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj",
         "projectName": "CarPartsShoppingList.Core",
-        "projectPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj",
-        "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
-        "outputPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Core\\obj\\",
+        "projectPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj",
+        "packagesPath": "C:\\Users\\Georgi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Georgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj": {
-                "projectPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj"
+              "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj"
               }
             }
           }
@@ -58,21 +58,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj": {
+    "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
         "projectName": "CarPartsShoppingList.Infrastructure",
-        "projectPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
-        "outputPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Infrastructure\\CarPartsShoppingList.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Georgi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Georgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -97,6 +97,28 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -112,21 +134,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList\\CarPartsShoppingList.csproj": {
+    "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\CarPartsShoppingList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList\\CarPartsShoppingList.csproj",
+        "projectUniqueName": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\CarPartsShoppingList.csproj",
         "projectName": "CarPartsShoppingList",
-        "projectPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList\\CarPartsShoppingList.csproj",
-        "packagesPath": "C:\\Users\\georg\\.nuget\\packages\\",
-        "outputPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList\\obj\\",
+        "projectPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\CarPartsShoppingList.csproj",
+        "packagesPath": "C:\\Users\\Georgi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\georg\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Georgi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -140,8 +162,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj": {
-                "projectPath": "D:\\softuni\\web proj\\CarPartsShoppingList\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj"
+              "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj": {
+                "projectPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj"
               }
             }
           }
@@ -195,7 +217,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
