@@ -1,5 +1,87 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using CarPartsShoppingList.Infrastructure.Models
+@model Suspension
+
+
 @{
+    ViewData["Title"] = "Окачване";
+}
+
+<div class="row">
+    <div class="col-md-12 text-right pb-15">
+        <a asp-action="Add" class="btn btn-success btn-flat">
+            <i class="fa fa-plus"></i>
+            Добави
+        </a>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <table id="suspensionListTable" class="table table-hover table-striped"></table>
+    </div>
+</div>
+
+@section scripts {
+<script>
+    $(function () {
+        var table = $('#suspensionListTable').DataTable({
+            ajax: {
+                "url": "@Url.Action("SuspensionListData", "Suspension")",
+                "type": "POST",
+                "datatype": "json",
+                data: function (d) {
+                    d.onlyActive = $("#onlyActive").length == 0 || $("#onlyActive").is(':checked');
+                }
+            },
+            columns: [
+                {
+                    name: 'suspensionName',
+                    data: 'suspensionName',
+                    title: 'Име на окачването',
+                    sortable: true,
+                    searchable: false
+                },
+            columns: [
+                {
+                    name: 'suspensionCode',
+                    data: 'suspensionCode',
+                    title: 'Код на окачването',
+                    sortable: true,
+                    searchable: false
+                },
+            columns: [
+                {
+                    name: 'suspensionPrice',
+                    data: 'suspensionPrice',
+                    title: 'Цена на окачването',
+                    sortable: true,
+                    searchable: false
+                },
+                {
+                    name: 'actions',
+                    data: "id",
+                    title: "",
+                    sortable: false,
+                    searchable: false,
+                    className: "text-center noExport",
+                    "render": function (value) {
+                        return TemplateToHtml('#templateEdit', value);
+                    }
+                }
+            ]
+        });
+
+        $(document).on('click', '#onlyActive', table.draw);
+
+    });
+</script>
+
+<script id="templateEdit" type="text/x-handlebars-template">
+    <a href="@Url.Action("Edit", "Suspension")/{{this}}" class="btn btn-warning btn-sm btn-flat" title="Редактирай"><i class="fa fa-edit"></i><span class="d-none d-lg-inline"> Редактирай</span></a>
+</script>
+<script id="templateOnlyActive" type="text/x-handlebars-template">
+    <div class="d-block d-lg-inline ml-2 custom-control custom-checkbox align-middle">
+        <input type="checkbox" id="onlyActive" name="onlyActive" class="custom-control-input align-middle" checked>
+        <label for="onlyActive" class="custom-control-label align-middle">Само активни</label>
+    </div>
+</script>
 }

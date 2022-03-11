@@ -6,10 +6,10 @@ namespace CarPartsShoppingList.Core.ViewModels
     {
         public int Id { get; set; }
 
-        [DisplayName("Shopping list name")]
-        public string Name { get; set; }
+        [DisplayName("Име на списък за пазаруване")]
+        public string ShoppingListName { get; set; }
 
-        [DisplayName("List of products")]
+        [DisplayName("Списък с продукти")]
         public List<int> Products { get; set; }
     }
 }

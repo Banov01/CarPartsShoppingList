@@ -1,5 +1,33 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
+﻿@using CarPartsShoppingList.Core.ViewModels
+@model ShoppingListViewModel
+
 @{
+    ViewData["Title"] = "Добавяне на списък";
 }
+
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Edit" method="post">
+            @Html.HiddenFor(x => x.Id)
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div id="saveContainer">
+                <partial name="_SaveFormContent" model="@("#saveContainer")" />
+
+                @* TODO select2 multi
+                    <div class="row">
+                    <div class="col-lg-6">@Html.EditorFor(x => x.Products, "Select2Multi")</div>
+                </div>*@
+
+                <div class="row">
+                    <div class="col-lg-6">@Html.EditorFor(x => x.ShoppingListName)</div>
+                </div>
+
+            <div class="form-group">
+
+                <input type="submit" value="Save" class="btn btn-success single-click-submit" />
+                <a asp-controller="Transmision" asp-action="Index" class="btn btn-danger">Назад</a>
+            </div>
+        </form>
+    </div>
+</div>

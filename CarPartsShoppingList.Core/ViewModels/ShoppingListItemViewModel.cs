@@ -6,17 +6,14 @@ namespace CarPartsShoppingList.Core.ViewModels
     {
         public int Id { get; set; }
 
-        [DisplayName("Item Name")]
-        public string Name { get; set; }
+        [DisplayName("Име на предмета")]
+        public string ShoppingListItemName { get; set; }
 
-        [DisplayName("Price")]
-        public decimal Price { get; set; }
+        [DisplayName("Цена на предмета")]
+        public decimal ShoppingListItemPrice { get; set; }
 
-        [DisplayName("Code")]
-        public string Code { get; set; }
-
-        [DisplayName("Is Purcashed")]
-        public bool IsActive { get; set; }
+        [DisplayName("Закупен")]
+        public bool IsPurchased { get; set; }
 
     }
 }
