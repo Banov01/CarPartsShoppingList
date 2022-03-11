@@ -175,6 +175,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/Engine/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/Engine/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW5naW5lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -205,6 +213,34 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/ShoppingList/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdMaXN0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/ShoppingList/ShoppingList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdMaXN0XFNob3BwaW5nTGlzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/ShoppingList/ShoppingListItem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdMaXN0XFNob3BwaW5nTGlzdEl0ZW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/Suspension/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VzcGVuc2lvblxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/Suspension/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VzcGVuc2lvblxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/Transmision/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNtaXNpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/Transmision/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVHJhbnNtaXNpb25cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Georgi/source/repos/Banov01/My-web-Proj/CarPartsShoppingList/Views/_ViewImports.cshtml]
