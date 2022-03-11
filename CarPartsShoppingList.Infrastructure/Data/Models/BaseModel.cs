@@ -17,7 +17,7 @@ namespace CarPartsShoppingList.Infrastructure.Models
         [DisplayName("Code")]
         public string Code { get; set; }
 
-        public bool IsActive { get; set; }
+        public bool IsChecked { get; set; }
 
     }
 }

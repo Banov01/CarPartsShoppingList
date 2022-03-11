@@ -4,9 +4,9 @@ i:{00000000-0000-0000-0000-000000000000}:CarPartsShoppingList.sln
 i:{00000000-0000-0000-0000-000000000000}:CarPartsShoppingList.Infrastructure
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\bin\debug\net6.0\carpartsshoppinglist.infrastructure.dll
 ++Dependencies
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>569
-i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:>568
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>934
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>702
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:>701
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>1094
 ++Analyzers
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:analyzers
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:analyzers
@@ -24,26 +24,18 @@ i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\
 ++20220307110804_FirstMigration.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220307110804_firstmigration.cs
+++20220307110804_FirstMigration.Designer.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220307110804_firstmigration.designer.cs
 ++20220310080540_UpdateDatabase.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220310080540_updatedatabase.cs
+++20220310080540_UpdateDatabase.Designer.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220310080540_updatedatabase.designer.cs
+++20220310091215_PrimariKeyFixing.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220310091215_primarikeyfixing.cs
 ++ApplicationDbContextModelSnapshot.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\applicationdbcontextmodelsnapshot.cs
 ++Models
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\models\
-++ApplicationDbContext.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\applicationdbcontext.cs
-++BaseModel.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\models\basemodel.cs
-++Engine.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\models\engine.cs
-++ShoppingList.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\models\shoppinglist.cs
-++ShoppingListItem.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\models\shoppinglistitem.cs
-++Suspension.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\models\suspension.cs
-++Transmission.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\models\transmission.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\
 ++Microsoft.CodeAnalysis.CSharp.NetAnalyzers
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\microsoft.codeanalysis.csharp.netanalyzers.dll
@@ -69,38 +61,165 @@ i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\microsoft.netcore.app
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\microsoft.netcore.app
 ++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.2)
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>982
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>964
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>1136
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>1125
 ++Microsoft.EntityFrameworkCore.Design (6.0.2)
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>981
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>1135
 ++Microsoft.EntityFrameworkCore.SqlServer (6.0.2)
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>980
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>962
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>1134
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>1123
 ++Microsoft.EntityFrameworkCore.Tools (6.0.2)
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>983
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>965
-++20220307110804_FirstMigration.Designer.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220307110804_firstmigration.designer.cs
-++20220310080540_UpdateDatabase.Designer.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220310080540_updatedatabase.designer.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>1137
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>1126
+++ApplicationDbContext.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\applicationdbcontext.cs
+++20220310091215_PrimariKeyFixing.Designer.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220310091215_primarikeyfixing.designer.cs
+++BaseModel.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\basemodel.cs
+++Engine.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\engine.cs
+++ShoppingList.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\shoppinglist.cs
+++ShoppingListItem.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\shoppinglistitem.cs
+++Suspension.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\suspension.cs
+++Transmission.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\transmission.cs
 ++CarPartsShoppingList.Core
 i:{00000000-0000-0000-0000-000000000000}:CarPartsShoppingList.Core
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\net6.0\carpartsshoppinglist.core.dll
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\carpartsshoppinglist.core.csproj
+++Projects
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:projects
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:projects
+++Imports
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:>497
+++Sdk.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\sdk\sdk.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.illink.tasks\sdk\sdk.props
+++Sdk.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\sdk\sdk.targets
+++Microsoft.NET.Sdk.BeforeCommon.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.beforecommon.targets
+++Microsoft.CSharp.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.targets
+++Microsoft.Managed.Before.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.before.targets
+++Microsoft.CSharp.CurrentVersion.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.csharp.currentversion.targets
+++Microsoft.Managed.After.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.managed.after.targets
+++Microsoft.NET.Sdk.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.targets
+++Microsoft.NET.Compatibility.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.targets
+++NuGet.Build.Tasks.Pack.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\nuget.build.tasks.pack\build\nuget.build.tasks.pack.targets
+++bin
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\
 ++Constants
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\constants\
+++CustomAttribute
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\customattribute\
+++obj
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\
+++ViewModels
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\viewmodels\
+++Microsoft.Common.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.props
+++Microsoft.NET.Sdk.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.props
+++Microsoft.NET.DefaultAssemblyInfo.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.defaultassemblyinfo.targets
+++Microsoft.NET.DefaultOutputPaths.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.defaultoutputpaths.targets
+++Microsoft.NET.Sdk.ImportPublishProfile.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importpublishprofile.targets
+++Microsoft.NET.TargetFrameworkInference.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.targetframeworkinference.targets
+++Microsoft.NET.Sdk.ImportWorkloads.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.targets
+++Microsoft.NET.RuntimeIdentifierInference.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.runtimeidentifierinference.targets
+++Microsoft.NET.EolTargetFrameworks.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.eoltargetframeworks.targets
+++Microsoft.NET.NuGetOfflineCache.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.nugetofflinecache.targets
+++Microsoft.CSharp.Core.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.csharp.core.targets
+++Microsoft.CSharp.DesignTime.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.csharp.designtime.targets
+++Microsoft.Common.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.targets
+++Microsoft.ServiceModel.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.servicemodel.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.servicemodel.targets
+++Microsoft.NET.Sdk.Common.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.common.targets
+++Microsoft.PackageDependencyResolution.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.packagedependencyresolution.targets
+++Microsoft.NET.Sdk.DefaultItems.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.targets
+++Microsoft.NET.Sdk.FrameworkReferenceResolution.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.frameworkreferenceresolution.targets
+++Microsoft.NET.Sdk.Shared.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.shared.targets
+++Microsoft.NET.DisableStandardFrameworkResolution.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.disablestandardframeworkresolution.targets
+++Microsoft.NET.DesignerSupport.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.designersupport.targets
+++Microsoft.NET.GenerateAssemblyInfo.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.generateassemblyinfo.targets
+++Microsoft.NET.GenerateGlobalUsings.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.generateglobalusings.targets
+++Microsoft.NET.GenerateSupportedRuntime.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.generatesupportedruntime.targets
+++Microsoft.NET.ComposeStore.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.composestore.targets
+++Microsoft.NET.CrossGen.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.crossgen.targets
+++Microsoft.NET.ObsoleteReferences.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.obsoletereferences.targets
+++Microsoft.NET.Publish.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.publish.targets
+++Microsoft.NET.PackTool.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.targets
+++Microsoft.NET.PackProjectTool.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.targets
+++Microsoft.NET.PreserveCompilationContext.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.preservecompilationcontext.targets
+++Microsoft.NET.ConflictResolution.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.conflictresolution.targets
+++Microsoft.NET.Sdk.CSharp.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.targets
+++Microsoft.NET.ILLink.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.illink.targets
+++Microsoft.NET.Sdk.Analyzers.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.analyzers.targets
+++Microsoft.NET.Compatibility.Common.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.common.targets
+++Debug
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\
 ++FormatingConstant.cs
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\constants\formatingconstant.cs
 ++MessageConstant.cs
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\constants\messageconstant.cs
-++CustomAttribute
-i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\customattribute\
-++ViewModels
-i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\viewmodels\
-++Projects
-i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:projects
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:projects
 ++IsBeforeAttribute.cs
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\customattribute\isbeforeattribute.cs
+++CarPartsShoppingList.Core.csproj.nuget.dgspec.json
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\carpartsshoppinglist.core.csproj.nuget.dgspec.json
+++CarPartsShoppingList.Core.csproj.nuget.g.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\carpartsshoppinglist.core.csproj.nuget.g.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\carpartsshoppinglist.core.csproj.nuget.g.props
+++CarPartsShoppingList.Core.csproj.nuget.g.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\carpartsshoppinglist.core.csproj.nuget.g.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\carpartsshoppinglist.core.csproj.nuget.g.targets
+++project.assets.json
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\project.assets.json
+++project.nuget.cache
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\project.nuget.cache
 ++EngineViewModel.cs
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\viewmodels\engineviewmodel.cs
 ++ErrorViewModel.cs
@@ -113,29 +232,285 @@ i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\viewmodels\suspensionviewmodel.cs
 ++TransmissionViewModel.cs
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\viewmodels\transmissionviewmodel.cs
+++Microsoft.NuGet.ImportBefore.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\imports\microsoft.common.props\importbefore\microsoft.nuget.importbefore.props
+++NuGet.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.props
+++Microsoft.NET.Sdk.DefaultItems.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.props
+++Microsoft.NET.Sdk.ImportWorkloads.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.importworkloads.props
+++Microsoft.NET.SupportedTargetFrameworks.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.supportedtargetframeworks.props
+++Microsoft.NET.SupportedPlatforms.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.supportedplatforms.props
+++Microsoft.NET.WindowsSdkSupportedTargetPlatforms.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.windowssdksupportedtargetplatforms.props
+++Microsoft.NET.Sdk.CSharp.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.csharp.props
+++Microsoft.NET.ILLink.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.illink.props
+++Microsoft.NET.Compatibility.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.compatibility.props
+++Microsoft.NET.PackTool.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.packtool.props
+++Microsoft.NET.PackProjectTool.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.packprojecttool.props
+++Microsoft.NET.Sdk.WindowsDesktop.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.props
+++Microsoft.NET.Windows.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.windows.props
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.android)
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.android\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.ios)
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.ios\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maccatalyst)
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maccatalyst\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.macos)
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.macos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maui)
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.maui\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.tvos)
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.sdk.tvos\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.emscripten)
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.emscripten\workloadmanifest.targets
+++WorkloadManifest.targets (C:\Program Files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.mono.toolchain)
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk-manifests\6.0.200\microsoft.net.workload.mono.toolchain\workloadmanifest.targets
+++Microsoft.Managed.Core.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.targets
+++Microsoft.Managed.DesignTime.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\managed\microsoft.managed.designtime.targets
+++Microsoft.Common.CurrentVersion.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.common.currentversion.targets
+++Microsoft.NET.Sdk.DefaultItems.Shared.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.sdk.defaultitems.shared.targets
+++Microsoft.NETCoreSdk.BundledCliTools.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\microsoft.netcoresdk.bundledclitools.props
+++Microsoft.NET.DefaultPackageConflictOverrides.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\targets\microsoft.net.defaultpackageconflictoverrides.targets
+++Microsoft.CodeAnalysis.NetAnalyzers.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.props
+++Microsoft.CodeAnalysis.NetAnalyzers.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk\analyzers\build\microsoft.codeanalysis.netanalyzers.targets
+++net6.0
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\net6.0\
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\
+++Microsoft.NuGet.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\nuget\17.0\microsoft.nuget.props
+++Microsoft.NETCoreSdk.BundledVersions.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\microsoft.netcoresdk.bundledversions.props
+++Microsoft.NET.Sdk.WindowsDesktop.WindowsForms.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.windowsforms.props
+++Microsoft.NET.Sdk.WindowsDesktop.WPF.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.windowsdesktop\targets\microsoft.net.sdk.windowsdesktop.wpf.props
+++Microsoft.Managed.Core.CurrentVersions.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\roslyn\microsoft.managed.core.currentversions.targets
+++Microsoft.NET.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.net.props
+++Microsoft.CodeAnalysis.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\codeanalysis\microsoft.codeanalysis.targets
+++Microsoft.Xaml.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.xaml.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.xaml.targets
+++Microsoft.WorkflowBuildExtensions.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\bin\amd64\microsoft.workflowbuildextensions.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\windows\microsoft.net\framework\v4.0.30319\microsoft.workflowbuildextensions.targets
+++Microsoft.TeamTest.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\visualstudio\v17.0\teamtest\microsoft.teamtest.targets
+++NuGet.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\common7\ide\commonextensions\microsoft\nuget\nuget.targets
+++Microsoft.Docker.ImportAfter.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.docker.importafter.targets
+++Microsoft.NET.Build.Extensions.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.net.build.extensions.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\microsoft\microsoft.net.build.extensions\microsoft.net.build.extensions.targets
+++Microsoft.NuGet.ImportAfter.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.nuget.importafter.targets
+++Microsoft.Web.ImportAfter.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\current\microsoft.common.targets\importafter\microsoft.web.importafter.targets
+++CarPartsShoppingList.Core.deps.json
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\net6.0\carpartsshoppinglist.core.deps.json
+++CarPartsShoppingList.Core.dll
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\net6.0\carpartsshoppinglist.core.dll
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.dll
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\ref\carpartsshoppinglist.core.dll
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\refint\carpartsshoppinglist.core.dll
+++CarPartsShoppingList.Core.pdb
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\net6.0\carpartsshoppinglist.core.pdb
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.pdb
+++CarPartsShoppingList.Infrastructure.dll
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\net6.0\carpartsshoppinglist.infrastructure.dll
+++CarPartsShoppingList.Infrastructure.pdb
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\net6.0\carpartsshoppinglist.infrastructure.pdb
+++ref
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\ref\
+++refint
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\refint\
+++.NETCoreApp,Version=v6.0.AssemblyAttributes.cs
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\.netcoreapp,version=v6.0.assemblyattributes.cs
+++CarPartsShoppingList.Core.AssemblyInfo.cs
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.assemblyinfo.cs
+++CarPartsShoppingList.Core.AssemblyInfoInputs.cache
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.assemblyinfoinputs.cache
+++CarPartsShoppingList.Core.assets.cache
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.assets.cache
+++CarPartsShoppingList.Core.csproj.AssemblyReference.cache
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.csproj.assemblyreference.cache
+++CarPartsShoppingList.Core.csproj.CopyComplete
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.csproj.copycomplete
+++CarPartsShoppingList.Core.csproj.CoreCompileInputs.cache
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.csproj.corecompileinputs.cache
+++CarPartsShoppingList.Core.csproj.FileListAbsolute.txt
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.csproj.filelistabsolute.txt
+++CarPartsShoppingList.Core.GeneratedMSBuildEditorConfig.editorconfig
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.generatedmsbuildeditorconfig.editorconfig
+++CarPartsShoppingList.Core.GlobalUsings.g.cs
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.globalusings.g.cs
+++Microsoft.NET.ILLink.Tasks.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.illink.tasks\build\microsoft.net.illink.tasks.props
+++System.Windows.Forms.Analyzers.props
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.windowsdesktop\targets\system.windows.forms.analyzers.props
+++Microsoft.Docker.targets
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\program files\microsoft visual studio\2022\community\msbuild\sdks\microsoft.docker.sdk\build\microsoft.docker.targets
 ++CarPartsShoppingList
 i:{00000000-0000-0000-0000-000000000000}:CarPartsShoppingList
 ++Connected Services 
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>935
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>1095
 ++Properties
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\
-++launchSettings.json
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\launchsettings.json
-++serviceDependencies.json
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\servicedependencies.json
 ++wwwroot
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\
+++css
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\css\
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\fontawesome-free\css\
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\bootstrap\dist\css\
+++img
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\img\
+++js
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\bootstrap\js\
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\bootstrap\dist\js\
+++pages
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\pages\
+++dashboard.js
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\pages\dashboard.js
+++dashboard2.js
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\pages\dashboard2.js
+++dashboard3.js
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\pages\dashboard3.js
+++.eslintrc.json
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\.eslintrc.json
+++adminlte.js
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\adminlte.js
+++demo.js
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\demo.js
+++site.js
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\site.js
+++lib
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\
+++plugins
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\
+++favicon.ico
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\favicon.ico
 ++Areas
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\
 ++Identity
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\
 ++Pages
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\
+++Account
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\
+++Manage
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\
+++_Layout.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\_layout.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\_layout.cshtml
+++_ManageNav.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\_managenav.cshtml
+++_StatusMessage.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\_statusmessage.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\_statusmessage.cshtml
+++_ViewImports.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\_viewimports.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\_viewimports.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\_viewimports.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\_viewimports.cshtml
+++ChangePassword.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\changepassword.cshtml
+++DeletePersonalData.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\deletepersonaldata.cshtml
+++Disable2fa.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\disable2fa.cshtml
+++DownloadPersonalData.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\downloadpersonaldata.cshtml
+++Email.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\email.cshtml
+++EnableAuthenticator.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\enableauthenticator.cshtml
+++ExternalLogins.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\externallogins.cshtml
+++GenerateRecoveryCodes.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\generaterecoverycodes.cshtml
+++Index.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\index.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\home\index.cshtml
+++ManageNavPages.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\managenavpages.cs
+++PersonalData.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\personaldata.cshtml
+++ResetAuthenticator.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\resetauthenticator.cshtml
+++SetPassword.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\setpassword.cshtml
+++ShowRecoveryCodes.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\showrecoverycodes.cshtml
+++TwoFactorAuthentication.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\twofactorauthentication.cshtml
+++AccessDenied.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\accessdenied.cshtml
+++ConfirmEmail.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\confirmemail.cshtml
+++ConfirmEmailChange.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\confirmemailchange.cshtml
+++ExternalLogin.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\externallogin.cshtml
+++ForgotPassword.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\forgotpassword.cshtml
+++ForgotPasswordConfirmation.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\forgotpasswordconfirmation.cshtml
+++Lockout.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\lockout.cshtml
+++Login.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\login.cshtml
+++LoginWith2fa.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\loginwith2fa.cshtml
+++LoginWithRecoveryCode.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\loginwithrecoverycode.cshtml
+++Logout.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\logout.cshtml
+++Register.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\register.cshtml
+++RegisterConfirmation.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\registerconfirmation.cshtml
+++ResendEmailConfirmation.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\resendemailconfirmation.cshtml
+++ResetPassword.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\resetpassword.cshtml
+++ResetPasswordConfirmation.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\resetpasswordconfirmation.cshtml
+++_ValidationScriptsPartial.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\_validationscriptspartial.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\_validationscriptspartial.cshtml
 ++_ViewStart.cshtml
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\_viewstart.cshtml
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\_viewstart.cshtml
+++Error.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\error.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\error.cshtml
 ++Controllers
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\controllers\
+++BaseController.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\controllers\basecontroller.cs
 ++HomeController.cs
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\controllers\homecontroller.cs
 ++ModelBinders
@@ -156,40 +531,8 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\
 ++Home
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\home\
-++Index.cshtml
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\home\index.cshtml
-++Privacy.cshtml
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\home\privacy.cshtml
 ++Shared
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\
-++_ViewImports.cshtml
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\_viewimports.cshtml
-++appsettings.json
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\appsettings.json
-++Program.cs
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\program.cs
-++SQL Server Express LocalDB (Local) (ConnectionStrings:DefaultConnection)
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>984
-++serviceDependencies.local.json
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\servicedependencies.local.json
-++css
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\css\
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\fontawesome-free\css\
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\bootstrap\dist\css\
-++img
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\img\
-++js
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\bootstrap\js\
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\bootstrap\dist\js\
-++lib
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\
-++plugins
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\
-++favicon.ico
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\favicon.ico
-++_Layout.cshtml
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\_layout.cshtml
 ++_LayoutOld.cshtml
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\_layoutold.cshtml
 ++_LoginPartial.cshtml
@@ -197,33 +540,18 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 ++_MainMenu.cshtml
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\_mainmenu.cshtml
 ++_UserMessage.cshtml
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\_usermessage.cshtml
-++_ValidationScriptsPartial.cshtml
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\_validationscriptspartial.cshtml
-++Error.cshtml
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\error.cshtml
-++appsettings.Development.json
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\appsettings.development.json
-++Microsoft.AspNetCore.Analyzers
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
-++Microsoft.AspNetCore.App.Analyzers
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
-++Microsoft.AspNetCore.App.CodeFixes
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
-++Microsoft.AspNetCore.Components.Analyzers
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
-++Microsoft.AspNetCore.Mvc.Analyzers
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
-++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
-++Microsoft.NET.Sdk.Razor.SourceGenerators
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
-++Microsoft.AspNetCore.App
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\microsoft.aspnetcore.app
-++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (6.0.2)
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>963
-++Microsoft.AspNetCore.Identity.UI (6.0.2)
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>966
+++appsettings.json
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\appsettings.json
+++Program.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\program.cs
+++ScaffoldingReadMe.txt
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\scaffoldingreadme.txt
+++SQL Server Express LocalDB (Local) (ConnectionStrings:DefaultConnection)
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>1153
+++launchSettings.json
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\launchsettings.json
+++serviceDependencies.json
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\servicedependencies.json
 ++alt
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\css\alt\
 ++adminlte.css
@@ -286,16 +614,10 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\img\user7-128x128.jpg
 ++user8-128x128.jpg
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\img\user8-128x128.jpg
-++pages
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\pages\
-++.eslintrc.json
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\.eslintrc.json
-++adminlte.js
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\adminlte.js
-++demo.js
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\demo.js
-++site.js
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\site.js
+++adminlte.js.map
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\adminlte.js.map
+++adminlte.min.js
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\adminlte.min.js
 ++bootstrap
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\bootstrap\
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\bootstrap\
@@ -310,8 +632,104 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\fontawesome-free\
 ++toastr
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\toastr\
+++ChangePassword.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\changepassword.cshtml.cs
+++DeletePersonalData.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\deletepersonaldata.cshtml.cs
+++Disable2fa.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\disable2fa.cshtml.cs
+++DownloadPersonalData.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\downloadpersonaldata.cshtml.cs
+++Email.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\email.cshtml.cs
+++EnableAuthenticator.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\enableauthenticator.cshtml.cs
+++ExternalLogins.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\externallogins.cshtml.cs
+++GenerateRecoveryCodes.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\generaterecoverycodes.cshtml.cs
+++Index.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\index.cshtml.cs
+++PersonalData.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\personaldata.cshtml.cs
+++ResetAuthenticator.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\resetauthenticator.cshtml.cs
+++SetPassword.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\setpassword.cshtml.cs
+++ShowRecoveryCodes.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\showrecoverycodes.cshtml.cs
+++TwoFactorAuthentication.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\manage\twofactorauthentication.cshtml.cs
+++AccessDenied.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\accessdenied.cshtml.cs
+++ConfirmEmail.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\confirmemail.cshtml.cs
+++ConfirmEmailChange.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\confirmemailchange.cshtml.cs
+++ExternalLogin.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\externallogin.cshtml.cs
+++ForgotPassword.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\forgotpassword.cshtml.cs
+++ForgotPasswordConfirmation.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\forgotpasswordconfirmation.cshtml.cs
+++Lockout.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\lockout.cshtml.cs
+++Login.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\login.cshtml.cs
+++LoginWith2fa.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\loginwith2fa.cshtml.cs
+++LoginWithRecoveryCode.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\loginwithrecoverycode.cshtml.cs
+++Logout.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\logout.cshtml.cs
+++Register.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\register.cshtml.cs
+++RegisterConfirmation.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\registerconfirmation.cshtml.cs
+++ResendEmailConfirmation.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\resendemailconfirmation.cshtml.cs
+++ResetPassword.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\resetpassword.cshtml.cs
+++ResetPasswordConfirmation.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\account\resetpasswordconfirmation.cshtml.cs
+++Error.cshtml.cs
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\identity\pages\error.cshtml.cs
+++Privacy.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\home\privacy.cshtml
 ++_LayoutOld.cshtml.css
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\_layoutold.cshtml.css
+++appsettings.Development.json
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\appsettings.development.json
+++MessagePackAnalyzer
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\.nuget\packages\messagepackanalyzer\2.1.152\analyzers\dotnet\messagepackanalyzer.dll
+++Microsoft.AspNetCore.Analyzers
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.analyzers.dll
+++Microsoft.AspNetCore.App.Analyzers
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.analyzers.dll
+++Microsoft.AspNetCore.App.CodeFixes
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\packs\microsoft.aspnetcore.app.ref\6.0.3\analyzers\dotnet\cs\microsoft.aspnetcore.app.codefixes.dll
+++Microsoft.AspNetCore.Components.Analyzers
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.components.analyzers.dll
+++Microsoft.AspNetCore.Mvc.Analyzers
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.web\analyzers\cs\microsoft.aspnetcore.mvc.analyzers.dll
+++Microsoft.AspNetCore.Razor.SourceGenerator.Tooling.Internal
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.aspnetcore.razor.sourcegenerator.tooling.internal.dll
+++Microsoft.CodeAnalysis.Analyzers
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.analyzers.dll
+++Microsoft.CodeAnalysis.CSharp.Analyzers
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
+++Microsoft.NET.Sdk.Razor.SourceGenerators
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdks\microsoft.net.sdk.razor\source-generators\microsoft.net.sdk.razor.sourcegenerators.dll
+++Microsoft.AspNetCore.App
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\microsoft.aspnetcore.app
+++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (6.0.2)
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>1124
+++Microsoft.AspNetCore.Identity.UI (6.0.2)
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>1128
+++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.2)
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>1127
+++serviceDependencies.local.json
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\servicedependencies.local.json
 ++adminlte.components.css
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\css\alt\adminlte.components.css
 ++adminlte.core.css
@@ -340,22 +758,15 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\img\credit\paypal2.png
 ++visa.png
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\img\credit\visa.png
-++dashboard.js
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\pages\dashboard.js
-++dashboard2.js
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\pages\dashboard2.js
-++dashboard3.js
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\pages\dashboard3.js
-++adminlte.js.map
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\adminlte.js.map
-++adminlte.min.js
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\adminlte.min.js
+++adminlte.min.js.map
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\adminlte.min.js.map
 ++dist
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\bootstrap\dist\
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\jquery\dist\
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\jquery-validation\dist\
 ++LICENSE
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\bootstrap\license
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\icheck-bootstrap\license
 ++LICENSE.txt
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\jquery\license.txt
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\jquery-validation-unobtrusive\license.txt
@@ -400,8 +811,6 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\css\alt\adminlte.plugins.min.css
 ++adminlte.min.css.map
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\css\adminlte.min.css.map
-++adminlte.min.js.map
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\js\adminlte.min.js.map
 ++additional-methods.js
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\jquery-validation\dist\additional-methods.js
 ++jquery.validate.js
@@ -592,7 +1001,17 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\bootstrap\dist\css\bootstrap-utilities.rtl.min.css.map
 ++bootstrap.esm.min.js.map
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\lib\bootstrap\dist\js\bootstrap.esm.min.js.map
-++20220310091215_PrimariKeyFixing.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220310091215_primarikeyfixing.cs
-++20220310091215_PrimariKeyFixing.Designer.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220310091215_primarikeyfixing.designer.cs
+++icheck-bootstrap
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\icheck-bootstrap\
+++icheck-bootstrap.css
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\icheck-bootstrap\icheck-bootstrap.css
+++icheck-bootstrap.min.css
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\wwwroot\plugins\icheck-bootstrap\icheck-bootstrap.min.css
+++CarPartsShoppingList.Core.csproj.BuildWithSkipAnalyzers
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\obj\debug\net6.0\carpartsshoppinglist.core.csproj.buildwithskipanalyzers
+++_UserMessages.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\_usermessages.cshtml
+++20220310144659_ModelsMovedToData.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220310144659_modelsmovedtodata.cs
+++20220310144659_ModelsMovedToData.Designer.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220310144659_modelsmovedtodata.designer.cs
