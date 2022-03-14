@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc.ModelBinding;
 
-namespace Warehouse.ModelBinders
+namespace CarPartsShoppingList.ModelBinders
 {
     public class DoubleModelBinderProvider : IModelBinderProvider
     {

@@ -1,8 +1,8 @@
+using CarPartsShoppingList.Core.Constants;
 using CarPartsShoppingList.Data;
+using CarPartsShoppingList.ModelBinders;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Warehouse.Core.Constants;
-using Warehouse.ModelBinders;
 
 var builder = WebApplication.CreateBuilder(args);
 
