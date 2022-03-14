@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Warehouse.Controllers
+namespace CarPartsShoppingList.Controllers
 {
     [Authorize]
     public class BaseController : Controller

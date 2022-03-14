@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
-namespace Warehouse.Controllers
+namespace CarPartsShoppingList.Controllers
 {
     public class HomeController : BaseController
     {
