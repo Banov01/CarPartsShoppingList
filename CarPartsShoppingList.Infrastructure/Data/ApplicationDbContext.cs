@@ -1,4 +1,4 @@
-﻿using CarPartsShoppingList.Infrastructure.Models;
+﻿using CarPartsShoppingList.Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 

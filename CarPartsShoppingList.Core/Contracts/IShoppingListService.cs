@@ -1,6 +1,6 @@
 ﻿using CarPartsShoppingList.Core.ViewModels;
 
-namespace CarPartsShoppingList.Core.Services
+namespace CarPartsShoppingList.Core.Contracts
 {
     public interface IShoppingListService
     {

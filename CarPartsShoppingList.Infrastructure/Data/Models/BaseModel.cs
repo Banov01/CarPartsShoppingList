@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace CarPartsShoppingList.Infrastructure.Models
+namespace CarPartsShoppingList.Infrastructure.Data.Models
 {
     public class BaseModel
     {

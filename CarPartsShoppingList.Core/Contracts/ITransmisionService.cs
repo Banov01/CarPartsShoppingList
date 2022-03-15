@@ -1,6 +1,6 @@
-﻿using CarPartsShoppingList.ViewModels;
+﻿using CarPartsShoppingList.Core.ViewModels;
 
-namespace CarPartsShoppingList.Core.Services
+namespace CarPartsShoppingList.Core.Contracts
 {
     public interface ITransmisionService
     {

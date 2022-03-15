@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel;
 
-namespace CarPartsShoppingList.ViewModels
+namespace CarPartsShoppingList.Core.ViewModels
 {
     public class SuspensionViewModel
     {

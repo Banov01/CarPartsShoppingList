@@ -1,4 +1,4 @@
-﻿using CarPartsShoppingList.Models;
+﻿using CarPartsShoppingList.Core.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
