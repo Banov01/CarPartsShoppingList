@@ -52,7 +52,7 @@ namespace CarPartsShoppingList.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("engines");
+                    b.ToTable("engines", (string)null);
                 });
 
             modelBuilder.Entity("CarPartsShoppingList.Infrastructure.Models.ShoppingList", b =>
@@ -79,7 +79,7 @@ namespace CarPartsShoppingList.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("shopping_list");
+                    b.ToTable("shopping_list", (string)null);
                 });
 
             modelBuilder.Entity("CarPartsShoppingList.Infrastructure.Models.ShoppingListItem", b =>
@@ -130,7 +130,7 @@ namespace CarPartsShoppingList.Infrastructure.Migrations
 
                     b.HasIndex("TransmissionId");
 
-                    b.ToTable("shopping_list_items");
+                    b.ToTable("shopping_list_items", (string)null);
                 });
 
             modelBuilder.Entity("CarPartsShoppingList.Infrastructure.Models.Suspension", b =>
@@ -157,7 +157,7 @@ namespace CarPartsShoppingList.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("suspensions");
+                    b.ToTable("suspensions", (string)null);
                 });
 
             modelBuilder.Entity("CarPartsShoppingList.Infrastructure.Models.Transmission", b =>
@@ -184,7 +184,7 @@ namespace CarPartsShoppingList.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("transmission");
+                    b.ToTable("transmission", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
