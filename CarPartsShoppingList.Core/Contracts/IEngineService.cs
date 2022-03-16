@@ -6,7 +6,7 @@ namespace CarPartsShoppingList.Core.Contracts
     {
         public IQueryable<EngineViewModel> GetEngines();
 
-        bool SaveData(EngineViewModel model);
+        Task<bool> SaveData(EngineViewModel model);
 
         EngineViewModel GetEngineModel(int id);
     }

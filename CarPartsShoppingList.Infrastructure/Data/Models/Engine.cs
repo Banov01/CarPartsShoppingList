@@ -12,5 +12,8 @@ namespace CarPartsShoppingList.Infrastructure.Data.Models
 
         [DisplayName("Cilinders")]
         public int Cilinders { get; set; }
+
+        [DisplayName("Category")]
+        public string EngineCategory { get; set; }
     }
 }

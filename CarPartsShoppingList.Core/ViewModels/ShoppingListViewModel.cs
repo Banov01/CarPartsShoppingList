@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using CarPartsShoppingList.Infrastructure.Data.Models;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace CarPartsShoppingList.Core.ViewModels
@@ -13,6 +14,6 @@ namespace CarPartsShoppingList.Core.ViewModels
         public string ShoppingListName { get; set; }
 
         [DisplayName("Списък с продукти")]
-        public List<int> Products { get; set; }
+        public List<ShoppingListItem> ShoppingListItems { get; set; }
     }
 }

@@ -4,10 +4,10 @@ namespace CarPartsShoppingList.Core.Contracts
 {
     public interface ITransmisionService
     {
-        public IQueryable<TransmissionViewModel> GetTransmisions();
+        public IQueryable<TransmisionViewModel> GetTransmisions();
 
-        bool SaveData(TransmissionViewModel model);
+        Task<bool> SaveData(TransmisionViewModel model);
 
-        TransmissionViewModel GetTransmisionModel(int id);
+        TransmisionViewModel GetTransmisionModel(int id);
     }
 }

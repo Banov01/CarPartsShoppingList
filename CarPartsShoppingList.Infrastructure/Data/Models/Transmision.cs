@@ -5,7 +5,7 @@ namespace CarPartsShoppingList.Infrastructure.Data.Models
 {
     [Table("transmission")]
     [DisplayName("Transmission")]
-    public  class Transmission: BaseModel
+    public  class Transmision: BaseModel
     {
 
     }

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace CarPartsShoppingList.Core.ViewModels
 {
-    public class TransmissionViewModel
+    public class TransmisionViewModel
     {
         public int Id { get; set; }
 
