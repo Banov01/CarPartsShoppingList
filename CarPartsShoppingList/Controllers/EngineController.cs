@@ -5,8 +5,6 @@ namespace CarPartsShoppingList.Controllers
 {
     public class EngineController : Controller
     {
-        private IEngineService engineService;
-
         public IActionResult Index()
         {
             return View();

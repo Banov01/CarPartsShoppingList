@@ -1,15 +1,28 @@
 using CarPartsShoppingList.Core.Constants;
 using CarPartsShoppingList.Data;
+using CarPartsShoppingList.Infrastructure.Data.Identity;
 using CarPartsShoppingList.ModelBinders;
-using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddApplicationDbContexts(builder.Configuration);
-
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+builder.Services.AddDefaultIdentity<ApplicationUser>(options =>
+{
+    options.SignIn.RequireConfirmedAccount = true;
+})
     .AddEntityFrameworkStores<ApplicationDbContext>();
+
+builder.Services.AddAuthentication()
+    .AddFacebook(options =>
+    {
+        //options.AppId = "3210745429248706";
+        //options.AppSecret = "f1d12e03bd960082c4f8b8ec01e75717";
+
+        options.AppId = builder.Configuration.GetValue<string>("Facebook:AppId");
+        options.AppSecret = builder.Configuration.GetValue<string>("Facebook:AppSecret");
+    });
+
 builder.Services.AddControllersWithViews()
     .AddMvcOptions(options =>
     {

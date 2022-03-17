@@ -1,10 +1,11 @@
-﻿using CarPartsShoppingList.Infrastructure.Data.Models;
+﻿using CarPartsShoppingList.Infrastructure.Data.Identity;
+using CarPartsShoppingList.Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace CarPartsShoppingList.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
