@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yDaSttmSXUrTe4NuiXK6Mv3tCRhsUY/kRrrXUpyUkIaV6JONn7pnbfghsOwzldYoE7VckvFZ2yRVGVoG29ikmg==",
+  "dgSpecHash": "ftjmatrfd2J8bsmYH2HUvpNrnKuTuKySnPGFRd6PvwBdaZjstB7WmSwW5W8/iyyEA+jF7V01zNt5Z8jHRGCxYA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\CarPartsShoppingList.csproj",
   "expectedPackageFiles": [
@@ -8,7 +8,7 @@
     "C:\\Users\\Georgi\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Georgi\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\Georgi\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
-    "C:\\Users\\Georgi\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\6.0.3\\microsoft.aspnetcore.authentication.facebook.6.0.3.nupkg.sha512",
+    "C:\\Users\\Georgi\\.nuget\\packages\\microsoft.aspnetcore.authentication.facebook\\6.0.2\\microsoft.aspnetcore.authentication.facebook.6.0.2.nupkg.sha512",
     "C:\\Users\\Georgi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.2\\microsoft.aspnetcore.cryptography.internal.6.0.2.nupkg.sha512",
     "C:\\Users\\Georgi\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\6.0.2\\microsoft.aspnetcore.cryptography.keyderivation.6.0.2.nupkg.sha512",
     "C:\\Users\\Georgi\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\6.0.2\\microsoft.aspnetcore.diagnostics.entityframeworkcore.6.0.2.nupkg.sha512",

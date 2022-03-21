@@ -1,5 +1,8 @@
-﻿using CarPartsShoppingList.Data;
+﻿using CarPartsShoppingList.Core.Contracts;
+using CarPartsShoppingList.Core.Services;
+using CarPartsShoppingList.Data;
 using CarPartsShoppingList.Infrastructure.Data.Common;
+using CarPartsShoppingList.Infrastructure.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 namespace Microsoft.Extensions.DependencyInjection
@@ -8,7 +11,8 @@ namespace Microsoft.Extensions.DependencyInjection
     {
         public static IServiceCollection AddApplicationServices(this IServiceCollection services)
         {
-            services.AddScoped<IRepository, Repository>();
+            services.AddScoped<IApplicatioDbRepository, ApplicatioDbRepository>();
+            services.AddScoped<IUserService, UserService>();
 
             return services;
         }
