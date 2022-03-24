@@ -266,9 +266,7 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.RazorAssemblyInfo.cs
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\scopedcss\Views\Shared\_LayoutOld.cshtml.rz.scp.css
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\scopedcss\bundle\CarPartsShoppingList.styles.css
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\scopedcss\projectbundle\CarPartsShoppingList.bundle.scp.css
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.csproj.CopyComplete
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\refint\CarPartsShoppingList.dll

@@ -5,9 +5,11 @@ VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarPartsShoppingList", "CarPartsShoppingList\CarPartsShoppingList.csproj", "{4E78A31F-51F8-434A-A486-FA0E8A1F7640}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPartsShoppingList.Core", "CarPartsShoppingList.Core\CarPartsShoppingList.Core.csproj", "{171B33DD-6420-4123-9FCA-BD0C83D67A88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarPartsShoppingList.Core", "CarPartsShoppingList.Core\CarPartsShoppingList.Core.csproj", "{171B33DD-6420-4123-9FCA-BD0C83D67A88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPartsShoppingList.Infrastructure", "CarPartsShoppingList.Infrastructure\CarPartsShoppingList.Infrastructure.csproj", "{DDB8EE3C-DC19-4A67-A788-F73CF4F9F52C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CarPartsShoppingList.Infrastructure", "CarPartsShoppingList.Infrastructure\CarPartsShoppingList.Infrastructure.csproj", "{DDB8EE3C-DC19-4A67-A788-F73CF4F9F52C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CarPartsShoppingList.Test", "CarPartsShoppingList.Test\CarPartsShoppingList.Test.csproj", "{58D6C01E-91B5-45B7-B041-8E490C97AFDC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{DDB8EE3C-DC19-4A67-A788-F73CF4F9F52C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DDB8EE3C-DC19-4A67-A788-F73CF4F9F52C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DDB8EE3C-DC19-4A67-A788-F73CF4F9F52C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58D6C01E-91B5-45B7-B041-8E490C97AFDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58D6C01E-91B5-45B7-B041-8E490C97AFDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58D6C01E-91B5-45B7-B041-8E490C97AFDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58D6C01E-91B5-45B7-B041-8E490C97AFDC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

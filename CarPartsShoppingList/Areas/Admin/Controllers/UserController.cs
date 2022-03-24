@@ -106,7 +106,7 @@ namespace CarPartsShoppingList.Areas.Admin.Controllers
         {
             await roleManager.CreateAsync(new IdentityRole()
             {
-                Name = "Admin"
+                Name = "Administrator"
             });
 
             return Ok();

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yQj5E0s9FuP+OkpBlPJMHFIKj3tbHUsJNBNvr8DGNn0=",
+  "Hash": "8PKzzsIKg2VnFAlSOPdqes3DjglebQhhXLdZUQWuMiQ=",
   "Source": "CarPartsShoppingList",
   "BasePath": "_content/CarPartsShoppingList",
   "Mode": "Default",
@@ -1035,40 +1035,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Georgi\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\6.0.2\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Identity": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CarPartsShoppingList.styles.css",
-      "SourceId": "CarPartsShoppingList",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
-      "BasePath": "_content/CarPartsShoppingList",
-      "RelativePath": "CarPartsShoppingList.styles.css",
-      "AssetKind": "All",
-      "AssetMode": "CurrentProject",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ApplicationBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\obj\\Debug\\net6.0\\scopedcss\\bundle\\CarPartsShoppingList.styles.css"
-    },
-    {
-      "Identity": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CarPartsShoppingList.bundle.scp.css",
-      "SourceId": "CarPartsShoppingList",
-      "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
-      "BasePath": "_content/CarPartsShoppingList",
-      "RelativePath": "CarPartsShoppingList.bundle.scp.css",
-      "AssetKind": "All",
-      "AssetMode": "Reference",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "ScopedCss",
-      "AssetTraitValue": "ProjectBundle",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\CarPartsShoppingList.bundle.scp.css"
     },
     {
       "Identity": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\wwwroot\\css\\adminlte.css",
