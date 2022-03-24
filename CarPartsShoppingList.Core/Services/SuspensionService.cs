@@ -65,7 +65,7 @@ namespace CarPartsShoppingList.Core.Services
                         entity.Code = model.SuspensionCode;
                     };
 
-                    repo.AddAsync(entity);
+                   await repo.AddAsync(entity);
                 }
                 repo.SaveChanges();
                 result = true;

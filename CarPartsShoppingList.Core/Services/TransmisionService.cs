@@ -64,7 +64,7 @@ namespace CarPartsShoppingList.Core.Services
                         entity.Price = model.TransmisionPrice;
                     };
 
-                    repo.AddAsync(entity);
+                    await repo.AddAsync(entity);
                 }
                 repo.SaveChanges();
                 result = true;
