@@ -30,7 +30,7 @@ namespace CarPartsShoppingList.Controllers
             return View();
         }
 
-        [Authorize(Roles =UserConstant.Roles.Administrator)]
+        [Authorize(Roles =UserConstant.Roles.ADMINISTRATOR)]
 
         public async Task<IActionResult> ManageUsers()
         {

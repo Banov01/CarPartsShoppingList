@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace CarPartsShoppingList.Areas.Admin.Controllers
 {
-        [Authorize(Roles = UserConstant.Roles.Administrator)]
+        [Authorize(Roles = UserConstant.Roles.ADMINISTRATOR)]
         [Area("Admin")]
         public class BaseController : Controller
         {

@@ -1,5 +1,4 @@
-﻿using CarPartsShoppingList.Core.Contracts;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace CarPartsShoppingList.Controllers
 {
