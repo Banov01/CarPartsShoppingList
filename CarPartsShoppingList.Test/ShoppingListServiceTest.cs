@@ -2,7 +2,8 @@ using NUnit.Framework;
 
 namespace CarPartsShoppingList.Test
 {
-    public class Tests
+    [TestFixture]
+    public class ShoppingListTest
     {
         [SetUp]
         public void Setup()

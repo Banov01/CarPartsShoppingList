@@ -12,6 +12,25 @@ namespace CarPartsShoppingList.Core.Services
         {
             repo = _repo;
         }
+
+        public async Task<bool> DeleteTransmision(int id)
+        {
+            bool result = false;
+            try
+            {
+                await repo.DeleteAsync<Transmision>(id);
+
+                result = true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return result;
+        }
+
         public TransmisionViewModel GetTransmisionModel(int id)
         {
             return repo.All<Transmision>()

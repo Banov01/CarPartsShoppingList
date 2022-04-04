@@ -13,6 +13,24 @@ namespace CarPartsShoppingList.Core.Services
             repo = _repo;
         }
 
+        public async Task<bool> DeleteSuspension(int id)
+        {
+            bool result = false;
+            try
+            {
+                await repo.DeleteAsync<Suspension>(id);
+
+                result = true;
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+            return result;
+        }
+
         public SuspensionViewModel GetSuspensionModel(int id)
         {
             return repo.All<Suspension>()

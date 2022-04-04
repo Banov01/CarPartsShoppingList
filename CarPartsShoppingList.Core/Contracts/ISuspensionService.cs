@@ -7,6 +7,7 @@ namespace CarPartsShoppingList.Core.Contracts
         public IQueryable<SuspensionViewModel> GetSuspensions();
 
         Task<bool> SaveData(SuspensionViewModel model);
+        Task<bool> DeleteSuspension(int id);
 
         SuspensionViewModel GetSuspensionModel(int id);
     }
