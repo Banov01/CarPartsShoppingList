@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Warehouse.Core.CustomAttributes
+namespace CarPartsShoppingList.Core.CustomAttributes
 {
     public class IsBeforeAttribute : ValidationAttribute
     {
