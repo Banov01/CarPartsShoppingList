@@ -1,103 +1,25 @@
-﻿@model ShoppingListItemViewModel
+﻿@using CarPartsShoppingList.Infrastructure.Data.Models
+@model List<ShoppingListItemViewModel>
 
 @{
-    ViewData["Title"] = "Списък с продукти ";
+    ViewData["Title"] = "Списък с части";
 }
 
-<div class="row">
-    <div class="col-md-12">
-        <table id="shoppingListItemData" class="table table-hover table-striped"></table>
-    </div>
-</div>
-
-@section scripts {
-<script>
-    $(function () {
-        var table = $('#shoppingListItemData').DataTable({
-            ajax: {
-                "url": "@Url.Action("ShoppingListItemData", "ShoppingList")",
-                "type": "POST",
-                "datatype": "json",
-                data: function (d) {
-                    d.shoppingListId = @ViewBag.Id;
-                    d.onlyActive = $("#onlyActive").length == 0 || $("#onlyActive").is(':checked');
-                }
-            },
-            columns: [
-                {
-                    name: 'shoppingListItemName',
-                    data: 'hoppingListItemName',
-                    title: 'Име на продукт',
-                    sortable: true,
-                    searchable: false
-                },
-                {
-                    name: 'shoppingListItemPrice',
-                    data: 'shoppingListItemPrice',
-                    title: 'Цена на продукт',
-                    sortable: true,
-                    searchable: false
-                },
-                {
-                    name: 'isPurchased',
-                    data: 'isPurchased',
-                    title: 'Закупен',
-                    sortable: true,
-                    searchable: true,
-                    //"render" : function(value)
-                    //{
-                    //     if (value === true) {
-                    //    return '<input type="checkbox" class="editor-active" onclick="return false;" checked>';}
-
-                    //    else {
-                    //    return '<input type="checkbox" onclick="return false;" class="editor-active">';}
-
-                    //   return value;
-                    //}
-                    "render": function (value) {
-                        var checkbox = $("<input/>",{
-                 "type": "checkbox"
-                        }); 
-                if(value === true){
-                 checkbox.attr("checked", "checked");
-                        checkbox.addClass("checkbox_checked");
-                }else {
-                 checkbox.removeAttr("checked");
-                 checkbox.addClass("checkbox_unchecked");
-                }
-                return checkbox.prop("outerHTML")
-                 }                                   
-                },             
-            ]
-        });
-
-        $(document).on('click', '#onlyActive', table.draw);
-
-    });
-</script>
-
-<script id="templateOnlyActive" type="text/x-handlebars-template">
-    <div class="d-block d-lg-inline ml-2 custom-control custom-checkbox align-middle">
-        <input type="checkbox" id="onlyActive" name="onlyActive" class="custom-control-input align-middle" checked>
-        <label for="onlyActive" class="custom-control-label align-middle">Само активни</label>
-    </div>
-</script>
-
-
-@* TODO
- @*   <script>
-  $('input[type="checkbox"]').click(function() {
-        if (!$(this).is(':checked')) {
-            var url = '@Url.Action("Check","ShoppingList")';
-            $.post(url,id)
-            .done(function (result)
-            {})
-            .fail(function (error) 
-            {
-             console.log("Неуспешно зачекване");
-             })
-            .always();
-            }
-        });
-</script>*@
-}
+    <h4>ShoppingListItem</h4>
+    <hr/>
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <th>ShoppingListItemId</th>
+            <th>ShoppingListItemName</th>
+            <th>ShoppingListItemPrice</th>
+            <th>IsPurchased</th>
+        </tr>
+        @foreach (ShoppingListItemViewModel shoppingListItem in Model)
+        {
+            <tr>
+                <td>@shoppingListItem.ShoppingListItemName</td>
+                <td>@shoppingListItem.ShoppingListItemPrice</td>
+                <td>@shoppingListItem.IsPurchased</td>
+            </tr>
+        }
+    </table>

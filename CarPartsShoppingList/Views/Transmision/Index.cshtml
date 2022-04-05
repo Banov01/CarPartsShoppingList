@@ -2,10 +2,10 @@
 @model List<TransmisionViewModel>
 
 @{
-    ViewData["Title"] = "Двигател";
+    ViewData["Title"] = "Скорости";
 }
 
-    <h4>Engine</h4>
+    <h4>Transmision</h4>
     <hr/>
     <table cellpadding="0" cellspacing="0">
         <tr>
@@ -14,12 +14,12 @@
             <th>TransmisionPrice</th>
             <th>TransmisionCode</th>
         </tr>
-        @foreach (TransmisionViewModel engine in Model)
+        @foreach (TransmisionViewModel transmision in Model)
         {
             <tr>
-                <td>@engine.TransmisionName</td>
-                <td>@engine.TransmisionPrice</td>
-                <td>@engine.TransmisionCode</td>
+                <td>@transmision.TransmisionName</td>
+                <td>@transmision.TransmisionPrice</td>
+                <td>@transmision.TransmisionCode</td>
             </tr>
         }
     </table>
