@@ -1,6 +1,7 @@
 ﻿using CarPartsShoppingList.Core.Contracts;
 using CarPartsShoppingList.Core.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using CarPartsShoppingList.Extensions;
 
 namespace CarPartsShoppingList.Controllers
 {
@@ -41,7 +42,8 @@ namespace CarPartsShoppingList.Controllers
             }
             var result = await engineService.SaveData(viewModel);
 
-            //TODO show notific ui
+            this.ShowNotificationMessageOnUI(result);
+
             return RedirectToAction("Index", "Engine");
         }
 
@@ -50,7 +52,8 @@ namespace CarPartsShoppingList.Controllers
         {
             var result = await engineService.DeleteEngine(id);
 
-            //TODO show notific ui
+            this.ShowNotificationMessageOnUI(result);
+
             return RedirectToAction("Index", "Engine");
         }
     }

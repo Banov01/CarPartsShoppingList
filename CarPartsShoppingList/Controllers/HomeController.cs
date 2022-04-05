@@ -1,24 +1,52 @@
 ﻿using CarPartsShoppingList.Core.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Caching.Distributed;
 using System.Diagnostics;
 
 namespace CarPartsShoppingList.Controllers
 {
     public class HomeController : BaseController
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<HomeController> logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IDistributedCache cache;
+
+        public HomeController(
+            ILogger<HomeController> _logger,
+            IDistributedCache _cache)
         {
-            _logger = logger;
+            logger = _logger;
+            cache = _cache;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
+        {
+
+            DateTime dateTime = DateTime.Now;
+            var cachedData = await cache.GetStringAsync("cachedTime");
+
+            if (cachedData == null)
+            {
+                cachedData = dateTime.ToString();
+                DistributedCacheEntryOptions cacheOptions = new DistributedCacheEntryOptions()
+                {
+                    SlidingExpiration = TimeSpan.FromSeconds(20),
+                    AbsoluteExpiration = DateTime.Now.AddSeconds(60)
+                };
+
+                await cache.SetStringAsync("cachedTime", cachedData, cacheOptions);
+            }
+
+            return View(nameof(Index), cachedData);
+        }
+
+        public IActionResult Privacy()
         {
             return View();
         }
 
-        public IActionResult Privacy()
+        [HttpGet]
+        public IActionResult UploadFile()
         {
             return View();
         }

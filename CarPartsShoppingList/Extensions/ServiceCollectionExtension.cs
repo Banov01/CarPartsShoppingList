@@ -12,10 +12,10 @@ namespace Microsoft.Extensions.DependencyInjection
         {
             services.AddScoped<IApplicatioDbRepository, ApplicatioDbRepository>();
             services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IEngineService, EngineService>();
-            services.AddScoped<ITransmisionService, TransmisionService>();
-            services.AddScoped<ISuspensionService, SuspensionService>();
-            services.AddScoped<IShoppingListService, ShoppingListService>();
+            //services.AddScoped<IEngineService, EngineService>();
+            //services.AddScoped<ITransmisionService, TransmisionService>();
+            //services.AddScoped<ISuspensionService, SuspensionService>();
+            //services.AddScoped<IShoppingListService, ShoppingListService>();
 
 
             return services;

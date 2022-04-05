@@ -1,5 +1,6 @@
 ﻿using CarPartsShoppingList.Core.Contracts;
 using CarPartsShoppingList.Core.ViewModels;
+using CarPartsShoppingList.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarPartsShoppingList.Controllers
@@ -38,8 +39,9 @@ namespace CarPartsShoppingList.Controllers
             }
             var result = await transmisionService.SaveData(viewModel);
 
-            //TODO show notific ui
-            return RedirectToAction("Index", "Engine");
+            this.ShowNotificationMessageOnUI(result);
+
+            return RedirectToAction("Index", "Transmision");
         }
 
         [HttpPost]
@@ -47,8 +49,9 @@ namespace CarPartsShoppingList.Controllers
         {
             var result = await transmisionService.DeleteTransmision(id);
 
-            //TODO show notific ui
-            return RedirectToAction("Index", "Engine");
+            this.ShowNotificationMessageOnUI(result);
+
+            return RedirectToAction("Index", "Transmision");
         }
     }
 }
