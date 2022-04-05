@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CarPartsShoppingList.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.ChangeTracking;
 using System.Linq.Expressions;
 
@@ -17,6 +18,14 @@ namespace CarPartsShoppingList.Infrastructure.Data.Common
         /// and tracking entity states 
         /// </summary>
         protected DbContext Context { get; set; }
+        /// <summary>
+        /// Public constructor to inject dependancies into the repository
+        /// </summary>
+        /// <param name="context">EF context to inject</param>
+        public Repository(ApplicationDbContext context)
+        {
+            this.Context = context;
+        }
 
         /// <summary>
         /// Representation of table in database

@@ -12,7 +12,6 @@ namespace CarPartsShoppingList.Data
         {
         }
 
-
         DbSet<Engine> Engines { get; set; }
         DbSet<ShoppingList> ShoppingLists { get; set; }
         DbSet<ShoppingListItem> ShoppingListItmes { get; set; }

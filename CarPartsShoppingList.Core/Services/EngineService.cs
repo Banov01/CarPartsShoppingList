@@ -33,7 +33,7 @@ namespace CarPartsShoppingList.Core.Services
 
         public EngineViewModel GetEngineModel(int id)
         {
-            return repo.All<Engine>()
+            var test = repo.AllReadonly<Engine>()
                 .Where(x => x.Id == id)
                 .Select(x => new EngineViewModel()
                 {
@@ -46,11 +46,16 @@ namespace CarPartsShoppingList.Core.Services
                     EngineCategory = x.EngineCategory,
                 })
                 .FirstOrDefault();
+
+            if (test == null)
+            {
+                return new EngineViewModel();
+            }
+            return test;
         }
 
         public IQueryable<EngineViewModel> GetEngines()
         {
-            var test = repo.AllReadonly<Engine>();
             return repo.AllReadonly<Engine>()
                  .Select(x => new EngineViewModel()
                  {
@@ -105,7 +110,7 @@ namespace CarPartsShoppingList.Core.Services
 
             catch (Exception ex)
             {
-                //log error
+                Console.WriteLine(ex);
             }
             return result;
         }
