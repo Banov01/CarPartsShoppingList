@@ -2,7 +2,7 @@
 @model List<EngineViewModel>
 
 @{
-    ViewData["Title"] = "Двигател";
+    ViewData ["Title"] = "Двигател";
 }
 
     <h4>Engine</h4>
@@ -16,6 +16,7 @@
             <th>EnginePrice</th>
             <th>EngineCode</th>
         </tr>
+
         @foreach (EngineViewModel engine in Model)
         {
             <tr>
