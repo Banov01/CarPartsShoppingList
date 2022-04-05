@@ -16,7 +16,9 @@ namespace CarPartsShoppingList.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            var tableViewModel = engineService.GetEngines().ToList();
+
+            return View(tableViewModel);
         }
 
         public IActionResult AddEngine()

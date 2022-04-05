@@ -1,109 +1,29 @@
-﻿@model EngineViewModel
+﻿@using CarPartsShoppingList.Infrastructure.Data.Models
+@model List<EngineViewModel>
 
 @{
     ViewData["Title"] = "Двигател";
 }
 
-<div class="row">
-    <div class="col-md-12 text-right pb-15">
-        <a asp-action="Add" class="btn btn-success btn-flat">
-            <i class="fa fa-plus"></i>
-            Добави
-        </a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <table id="enginesListTable" class="table table-hover table-striped"></table>
-    </div>
-</div>
-
-@section scripts {
-<script>
-    $(function () {
-        var table = $('#enginesListTable').DataTable({
-            ajax: {
-                "url": "@Url.Action("EnginesListData", "Engine")",
-                "type": "POST",
-                "datatype": "json",
-                data: function (d) {
-                    d.onlyActive = $("#onlyActive").length == 0 || $("#onlyActive").is(':checked');
-                }
-            },
-            columns: [
-                {
-                    name: 'engineName',
-                    data: 'engineName',
-                    title: 'Име на двигател',
-                    sortable: true,
-                    searchable: false
-                },
-                columns: [
-                {
-                    name: 'engineCategory',
-                    data: 'engineCategory',
-                    title: 'Категория двигател',
-                    sortable: true,
-                    searchable: false
-                },
-            columns: [
-                {
-                    name: 'engineCode',
-                    data: 'engineCode',
-                    title: 'Код на двигател',
-                    sortable: true,
-                    searchable: false
-                },
-            columns: [
-                {
-                    name: 'cilinders',
-                    data: 'cilinders',
-                    title: 'Цилиндри',
-                    sortable: true,
-                    searchable: false
-                },
-            columns: [
-                {
-                    name: 'cubature',
-                    data: 'cubature',
-                    title: 'Кубатура',
-                    sortable: true,
-                    searchable: false
-                },
-            columns: [
-                {
-                    name: 'enginePrice',
-                    data: 'enginePrice',
-                    title: 'Цена на двигател',
-                    sortable: true,
-                    searchable: false
-                },
-                {
-                    name: 'actions',
-                    data: "id",
-                    title: "",
-                    sortable: false,
-                    searchable: false,
-                    className: "text-center noExport",
-                    "render": function (value) {
-                        return TemplateToHtml('#templateEdit', value);
-                    }
-                }
-            ]
-        });
-
-        $(document).on('click', '#onlyActive', table.draw);
-
-    });
-</script>
-
-<script id="templateEdit" type="text/x-handlebars-template">
-    <a href="@Url.Action("Edit", "Engine")/{{this}}" class="btn btn-warning btn-sm btn-flat" title="Редактирай"><i class="fa fa-edit"></i><span class="d-none d-lg-inline"> Редактирай</span></a>
-</script>
-<script id="templateOnlyActive" type="text/x-handlebars-template">
-    <div class="d-block d-lg-inline ml-2 custom-control custom-checkbox align-middle">
-        <input type="checkbox" id="onlyActive" name="onlyActive" class="custom-control-input align-middle" checked>
-        <label for="onlyActive" class="custom-control-label align-middle">Само активни</label>
-    </div>
-</script>
-}
+    <h4>Engine</h4>
+    <hr/>
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <th>EngineId</th>
+            <th>EngineName</th>
+            <th>Cubature</th>
+            <th>Cilinders</th>
+            <th>EnginePrice</th>
+            <th>EngineCode</th>
+        </tr>
+        @foreach (EngineViewModel engine in Model)
+        {
+            <tr>
+                <td>@engine.EngineName</td>
+                <td>@engine.Cubature</td>
+                <td>@engine.Cilinders</td>
+                <td>@engine.EnginePrice</td>
+                <td>@engine.EngineCode</td>
+            </tr>
+        }
+    </table>

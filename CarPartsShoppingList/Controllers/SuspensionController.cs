@@ -15,7 +15,9 @@ namespace CarPartsShoppingList.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var tableViewModel = suspensionService.GetSuspensions().ToList();
+
+            return View(tableViewModel);
         }
 
         public IActionResult AddSuspension()

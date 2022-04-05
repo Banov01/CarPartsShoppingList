@@ -1,86 +1,25 @@
-﻿@model TransmisionViewModel
-
+﻿@using CarPartsShoppingList.Infrastructure.Data.Models
+@model List<TransmisionViewModel>
 
 @{
-    ViewData["Title"] = "Скорости";
+    ViewData["Title"] = "Двигател";
 }
 
-<div class="row">
-    <div class="col-md-12 text-right pb-15">
-        <a asp-action="Add" class="btn btn-success btn-flat">
-            <i class="fa fa-plus"></i>
-            Добави
-        </a>
-    </div>
-</div>
-<div class="row">
-    <div class="col-md-12">
-        <table id="transmisionListTable" class="table table-hover table-striped"></table>
-    </div>
-</div>
-
-@section scripts {
-<script>
-    $(function () {
-        var table = $('#transmisionListTable').DataTable({
-            ajax: {
-                "url": "@Url.Action("TransmisionListData", "Transmision")",
-                "type": "POST",
-                "datatype": "json",
-                data: function (d) {
-                    d.onlyActive = $("#onlyActive").length == 0 || $("#onlyActive").is(':checked');
-                }
-            },
-            columns: [
-                {
-                    name: 'transmisionName',
-                    data: 'transmisionName',
-                    title: 'Име на скоростите',
-                    sortable: true,
-                    searchable: false
-                },
-            columns: [
-                {
-                    name: 'transmisionCode',
-                    data: 'transmisionCode',
-                    title: 'Код на скоростите',
-                    sortable: true,
-                    searchable: false
-                },
-            columns: [
-                {
-                    name: 'transmisionPrice',
-                    data: 'transmisionPrice',
-                    title: 'Цена на скоростите',
-                    sortable: true,
-                    searchable: false
-                },
-                {
-                    name: 'actions',
-                    data: "id",
-                    title: "",
-                    sortable: false,
-                    searchable: false,
-                    className: "text-center noExport",
-                    "render": function (value) {
-                        return TemplateToHtml('#templateEdit', value);
-                    }
-                }
-            ]
-        });
-
-        $(document).on('click', '#onlyActive', table.draw);
-
-    });
-</script>
-
-<script id="templateEdit" type="text/x-handlebars-template">
-    <a href="@Url.Action("Edit", "Transmision")/{{this}}" class="btn btn-warning btn-sm btn-flat" title="Редактирай"><i class="fa fa-edit"></i><span class="d-none d-lg-inline"> Редактирай</span></a>
-</script>
-<script id="templateOnlyActive" type="text/x-handlebars-template">
-    <div class="d-block d-lg-inline ml-2 custom-control custom-checkbox align-middle">
-        <input type="checkbox" id="onlyActive" name="onlyActive" class="custom-control-input align-middle" checked>
-        <label for="onlyActive" class="custom-control-label align-middle">Само активни</label>
-    </div>
-</script>
-}
+    <h4>Engine</h4>
+    <hr/>
+    <table cellpadding="0" cellspacing="0">
+        <tr>
+            <th>TransmisionId</th>
+            <th>TransmisionName</th>
+            <th>TransmisionPrice</th>
+            <th>TransmisionCode</th>
+        </tr>
+        @foreach (TransmisionViewModel engine in Model)
+        {
+            <tr>
+                <td>@engine.TransmisionName</td>
+                <td>@engine.TransmisionPrice</td>
+                <td>@engine.TransmisionCode</td>
+            </tr>
+        }
+    </table>

@@ -50,6 +50,7 @@ namespace CarPartsShoppingList.Core.Services
 
         public IQueryable<EngineViewModel> GetEngines()
         {
+            var test = repo.AllReadonly<Engine>();
             return repo.AllReadonly<Engine>()
                  .Select(x => new EngineViewModel()
                  {

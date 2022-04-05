@@ -15,7 +15,9 @@ namespace CarPartsShoppingList.Controllers
         }
         public IActionResult Index()
         {
-            return View();
+            var tableViewModel = transmisionService.GetTransmisions().ToList();
+
+            return View(tableViewModel);
         }
         public IActionResult AddTransmision()
         {
