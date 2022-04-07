@@ -5,20 +5,21 @@
     ViewData["Title"] = "Окачване";
 }
 
-<h4>Suspension</h4>
-<hr />
-<table style="width:100%">
-    <tr>
-        <th>SuspensionName</th>
-        <th>SuspensionPrice</th>
-        <th>SuspensionCode</th>
-    </tr>
-    @foreach (SuspensionViewModel suspension in Model)
-    {
+<body>
+    <hr />
+    <table style="width:100%">
         <tr>
-            <td>@suspension.SuspensionName</td>
-            <td>@suspension.SuspensionPrice</td>
-            <td>@suspension.SuspensionCode</td>
+            <th>SuspensionName</th>
+            <th>SuspensionPrice</th>
+            <th>SuspensionCode</th>
         </tr>
-    }
-</table>
+        @foreach (SuspensionViewModel suspension in Model)
+        {
+            <tr>
+                <td>@suspension.SuspensionName</td>
+                <td>@suspension.SuspensionPrice</td>
+                <td>@suspension.SuspensionCode</td>
+            </tr>
+        }
+    </table>
+</body>

@@ -5,25 +5,28 @@
     ViewData["Title"] = "Двигател";
 }
 
-<h4>Engine</h4>
-<hr />
-<table style="width:100%">
-    <tr>
-        <th>EngineName</th>
-        <th>Cubature</th>
-        <th>Cilinders</th>
-        <th>EnginePrice</th>
-        <th>EngineCode</th>
-    </tr>
-
-    @foreach (EngineViewModel engine in Model)
-    {
+<body>
+    <hr />
+    <table style="width:100%">
         <tr>
-            <td>@engine.EngineName</td>
-            <td>@engine.Cubature</td>
-            <td>@engine.Cilinders</td>
-            <td>@engine.EnginePrice</td>
-            <td>@engine.EngineCode</td>
+            <th>EngineName</th>
+            <th>EngineCategory</th>
+            <th>Cubature</th>
+            <th>Cilinders</th>
+            <th>EnginePrice</th>
+            <th>EngineCode</th>
         </tr>
-    }
-</table>
+
+        @foreach (EngineViewModel engine in Model)
+        {
+            <tr>
+                <td>@engine.EngineName</td>
+                <td>@engine.EngineCategory</td>
+                <td>@engine.Cubature</td>
+                <td>@engine.Cilinders</td>
+                <td>@engine.EnginePrice</td>
+                <td>@engine.EngineCode</td>
+            </tr>
+        }
+    </table>
+</body>

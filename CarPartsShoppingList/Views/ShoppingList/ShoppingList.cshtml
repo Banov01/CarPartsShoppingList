@@ -5,18 +5,19 @@
     ViewData["Title"] = "Списък за пазаруване";
 }
 
-<h4>ShoppingList</h4>
-<hr />
-<table style="width:100%">
-    <tr>
-        <th>ShoppingListName</th>
-        <th>ShoppingListItems</th>
-    </tr>
-    @foreach (ShoppingListViewModel shoppingList in Model)
-    {
+<body>
+    <hr />
+    <table style="width:100%">
         <tr>
-            <td>@shoppingList.ShoppingListName</td>
-            <td>@shoppingList.ShoppingListItems</td>
+            <th>ShoppingListName</th>
+            <th>ShoppingListItems</th>
         </tr>
-    }
-</table>
+        @foreach (ShoppingListViewModel shoppingList in Model)
+        {
+            <tr>
+                <td>@shoppingList.ShoppingListName</td>
+                <td>@shoppingList.ShoppingListItems</td>
+            </tr>
+        }
+    </table>
+</body>

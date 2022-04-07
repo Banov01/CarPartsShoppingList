@@ -5,20 +5,21 @@
     ViewData["Title"] = "Скорости";
 }
 
-<h4>Transmision</h4>
-<hr />
-<table style="width:100%">
-    <tr>
-        <th>TransmisionName</th>
-        <th>TransmisionPrice</th>
-        <th>TransmisionCode</th>
-    </tr>
-    @foreach (TransmisionViewModel transmision in Model)
-    {
+<body>
+    <hr />
+    <table style="width:100%">
         <tr>
-            <td>@transmision.TransmisionName</td>
-            <td>@transmision.TransmisionPrice</td>
-            <td>@transmision.TransmisionCode</td>
+            <th>TransmisionName</th>
+            <th>TransmisionPrice</th>
+            <th>TransmisionCode</th>
         </tr>
-    }
-</table>
+        @foreach (TransmisionViewModel transmision in Model)
+        {
+            <tr>
+                <td>@transmision.TransmisionName</td>
+                <td>@transmision.TransmisionPrice</td>
+                <td>@transmision.TransmisionCode</td>
+            </tr>
+        }
+    </table>
+</body>
