@@ -3,9 +3,9 @@ using CarPartsShoppingList.Core.ViewModels;
 using CarPartsShoppingList.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CarPartsShoppingList.Controllers
+namespace CarPartsShoppingList.Areas.Admin.Controllers
 {
-    public class SuspensionController : Controller
+    public class SuspensionController : BaseController
     {
         private readonly ISuspensionService suspensionService;
 

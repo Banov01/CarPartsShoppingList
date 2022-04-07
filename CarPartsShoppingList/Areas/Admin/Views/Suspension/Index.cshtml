@@ -19,6 +19,7 @@
                 <td>@suspension.SuspensionName</td>
                 <td>@suspension.SuspensionPrice</td>
                 <td>@suspension.SuspensionCode</td>
+                <a asp-controller="Suspension" asp-action="Edit" asp-route-id="@suspension.Id">Edit</a>
             </tr>
         }
     </table>

@@ -19,6 +19,7 @@
                 <td>@transmision.TransmisionName</td>
                 <td>@transmision.TransmisionPrice</td>
                 <td>@transmision.TransmisionCode</td>
+                <a asp-controller="Transmision" asp-action="Edit" asp-route-id="@transmision.Id">Edit</a>
             </tr>
         }
     </table>

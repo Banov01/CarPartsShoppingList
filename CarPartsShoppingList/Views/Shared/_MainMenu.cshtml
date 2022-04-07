@@ -5,7 +5,7 @@
         @if(User.IsInRole("ADMINISTRATOR"))
         {
            <li class="nav-item">
-            <a href="/" class="nav-link">
+            <a asp-area="Admin" asp-controller="Home" class="nav-link">
                 <i class="fas fa-home"></i>
                 <p>
                     Home
@@ -13,7 +13,7 @@
             </a>
         </li> 
          <li class="nav-item">
-            <a href="/" class="nav-link">
+            <a asp-area="Admin" asp-controller="Engine" class="nav-link">
                <i class="fas fa-truck-pickup"></i>
                 <p>
                     Engine
@@ -21,7 +21,7 @@
             </a>
         </li> 
          <li class="nav-item">
-            <a href="/" class="nav-link">
+            <a asp-area="Admin" asp-controller="Suspension" class="nav-link">
                 <i class="fas fa-truck-pickup"></i>
                 <p>
                     Suspension
@@ -29,7 +29,7 @@
             </a>
         </li> 
          <li class="nav-item">
-            <a href="/" class="nav-link">
+            <a asp-area="Admin" asp-controller="Transmision" class="nav-link">
                <i class="fas fa-truck-pickup"></i>
                 <p>
                     Transmision

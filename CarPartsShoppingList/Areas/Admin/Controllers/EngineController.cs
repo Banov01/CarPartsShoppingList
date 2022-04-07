@@ -1,11 +1,11 @@
 ﻿using CarPartsShoppingList.Core.Contracts;
 using CarPartsShoppingList.Core.ViewModels;
-using Microsoft.AspNetCore.Mvc;
 using CarPartsShoppingList.Extensions;
+using Microsoft.AspNetCore.Mvc;
 
-namespace CarPartsShoppingList.Controllers
+namespace CarPartsShoppingList.Areas.Admin.Controllers
 {
-    public class EngineController : Controller
+    public class EngineController : BaseController
     {
         private readonly IEngineService engineService;
 
@@ -28,11 +28,12 @@ namespace CarPartsShoppingList.Controllers
             return View("Edit", viewModel);
         }
 
-        public IActionResult EditEngine(int id)
+        [HttpGet]
+        public IActionResult Edit(int id)
         {
             var model = engineService.GetEngineModel(id);
 
-            return View("Edit", model);
+            return View(model);
         }
 
         [HttpPost]

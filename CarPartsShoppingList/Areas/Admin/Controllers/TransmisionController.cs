@@ -3,9 +3,9 @@ using CarPartsShoppingList.Core.ViewModels;
 using CarPartsShoppingList.Extensions;
 using Microsoft.AspNetCore.Mvc;
 
-namespace CarPartsShoppingList.Controllers
+namespace CarPartsShoppingList.Areas.Admin.Controllers
 {
-    public class TransmisionController : Controller
+    public class TransmisionController : BaseController
     {
         private readonly ITransmisionService transmisionService;
 
