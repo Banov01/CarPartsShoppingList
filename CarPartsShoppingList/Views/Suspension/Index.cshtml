@@ -2,23 +2,23 @@
 @model List<SuspensionViewModel>
 
 @{
-    ViewData ["Title"] = "Окачване";
+    ViewData["Title"] = "Окачване";
 }
 
-    <h4>Suspension</h4>
-    <hr/>
-    <table cellpadding="0" cellspacing="0">
+<h4>Suspension</h4>
+<hr />
+<table style="width:100%">
+    <tr>
+        <th>SuspensionName</th>
+        <th>SuspensionPrice</th>
+        <th>SuspensionCode</th>
+    </tr>
+    @foreach (SuspensionViewModel suspension in Model)
+    {
         <tr>
-            <th>SuspensionName</th>
-            <th>SuspensionPrice</th>
-            <th>SuspensionCode</th>
+            <td>@suspension.SuspensionName</td>
+            <td>@suspension.SuspensionPrice</td>
+            <td>@suspension.SuspensionCode</td>
         </tr>
-        @foreach (SuspensionViewModel suspension in Model)
-        {
-            <tr>
-                <td>@suspension.SuspensionName</td>
-                <td>@suspension.SuspensionPrice</td>
-                <td>@suspension.SuspensionCode</td>
-            </tr>
-        }
-    </table>
+    }
+</table>
