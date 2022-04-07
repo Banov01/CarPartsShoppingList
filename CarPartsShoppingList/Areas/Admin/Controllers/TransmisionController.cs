@@ -25,7 +25,7 @@ namespace CarPartsShoppingList.Areas.Admin.Controllers
 
             return View("Edit", viewModel);
         }
-        public IActionResult EditTransmision(int id)
+        public IActionResult Edit(int id)
         {
             var model = transmisionService.GetTransmisionModel(id);
 

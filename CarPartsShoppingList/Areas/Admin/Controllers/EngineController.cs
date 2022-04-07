@@ -21,7 +21,8 @@ namespace CarPartsShoppingList.Areas.Admin.Controllers
             return View(tableViewModel);
         }
 
-        public IActionResult AddEngine()
+        [HttpGet]
+        public IActionResult Add()
         {
             var viewModel = new EngineViewModel();
 

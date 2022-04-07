@@ -6,7 +6,7 @@
 
 <div class="row">
     <div class="col-md-6">
-        <form asp-controller="Suspension" form asp-action="Edit" method="post">
+        <form asp-controller="Suspension" asp-action="Edit" method="post">
             @Html.HiddenFor(x => x.Id)
 
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>

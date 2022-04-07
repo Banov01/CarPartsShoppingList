@@ -17,6 +17,8 @@
             <tr>
                 <td>@shoppingList.ShoppingListName</td>
                 <td>@shoppingList.ShoppingListItems</td>
+                <a asp-controller="ShoppingList" asp-action="Add" class="btn btn-success single-click-submit" asp-route-id="@shoppingList.Id">Add</a>
+                <a asp-controller="ShoppingList" asp-action="Edit" class="btn btn-danger" asp-route-id="@shoppingList.Id">Edit</a>
             </tr>
         }
     </table>

@@ -26,7 +26,8 @@
                 <td>@engine.Cilinders</td>
                 <td>@engine.EnginePrice</td>
                 <td>@engine.EngineCode</td>
-                <a asp-controller="Engine" asp-action="Edit" asp-route-id="@engine.Id">Edit</a>
+                <a asp-controller="Engine" asp-action="Add" class="btn btn-success single-click-submit" asp-route-id="@engine.Id">Add</a>
+                <a asp-controller="Engine" asp-action="Edit"class="btn btn-danger" asp-route-id="@engine.Id">Edit</a>
             </tr>
         }
     </table>
