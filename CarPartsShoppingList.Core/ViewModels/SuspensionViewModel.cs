@@ -9,7 +9,7 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [Required]
         [DisplayName("Suspension name")]
-        [StringLength(40)]
+        [StringLength(12)]
         public string SuspensionName { get; set; }
 
         [DisplayName("Suspension price")]
@@ -17,7 +17,7 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [Required]
         [DisplayName("Suspension code")]
-        [StringLength(30)]
+        [StringLength(10)]
         public string SuspensionCode { get; set; }
 
     }

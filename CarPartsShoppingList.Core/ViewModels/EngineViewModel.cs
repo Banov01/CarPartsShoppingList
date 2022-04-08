@@ -9,12 +9,12 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [Required]
         [DisplayName("Engine name")]
-        [StringLength(40)]
+        [StringLength(15)]
         public string EngineName { get; set; }
 
         [Required]
         [DisplayName("Engine category")]
-        [StringLength(30)]
+        [StringLength(10)]
         public string EngineCategory { get; set; }
 
         [Required]
@@ -30,7 +30,7 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [Required]
         [DisplayName("Engine code")]
-        [StringLength(30)]
+        [StringLength(12)]
         public string EngineCode { get; set; }
 
     }

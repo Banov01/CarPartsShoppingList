@@ -9,7 +9,7 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [Required]
         [DisplayName("Item name")]
-        [StringLength(40)]
+        [StringLength(15)]
         public string ShoppingListItemName { get; set; }
 
         [DisplayName("Item price")]
