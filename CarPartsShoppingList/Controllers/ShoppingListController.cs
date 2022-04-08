@@ -42,6 +42,8 @@ namespace CarPartsShoppingList.Controllers
         [HttpGet]
         public IActionResult Add()
         {
+            GetViewBags();
+
             var listItems = this.shoppingListService.GetShoppingLists();
 
             return View();

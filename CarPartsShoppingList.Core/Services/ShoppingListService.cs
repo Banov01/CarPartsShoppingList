@@ -32,14 +32,17 @@ namespace CarPartsShoppingList.Core.Services
 
         public ShoppingListItemViewModel GetShoppingListItemById(int id)
         {
-            return repo.All<ShoppingListItem>()
+            return repo.AllReadonly<ShoppingListItem>()
                 .Where(x => x.Id == id)
                 .Select(x => new ShoppingListItemViewModel()
                 {
                     Id = x.Id,
-                    ShoppingListItemName = x.Name,
+                    ShoppingListName = x.Name,
+                    //Engine = x.Engine,
+                    //Transmision=x.Transmission,
+                    //Suspension=x.Suspension,
                     IsPurchased = x.IsChecked,
-                    ShoppingListItemPrice = x.Price
+                    
                 })
                 .FirstOrDefault();
         }
@@ -54,26 +57,16 @@ namespace CarPartsShoppingList.Core.Services
                 .Select(x => new ShoppingListItemViewModel()
                 {
                     Id = x.Id,
-                    ShoppingListItemName = x.Name,
-                    ShoppingListItemPrice = x.Price,
+                    ShoppingListName = x.Name,
                     IsPurchased = x.IsChecked,
                 });
         }
 
         public IQueryable<ShoppingListViewModel> GetShoppingLists()
         {
-            var engines = repo.
-
             return repo.AllReadonly<ShoppingList>()
                 .Select(x => new ShoppingListViewModel()
                 {
-                     Id = x.Id,
-                     ShoppingListName = x.Name,
-                     ShoppingListItems = new ShoppingListItem()
-                     {
-                        Engines= engines
-                     }
-
                 })
                 .AsQueryable();
         }

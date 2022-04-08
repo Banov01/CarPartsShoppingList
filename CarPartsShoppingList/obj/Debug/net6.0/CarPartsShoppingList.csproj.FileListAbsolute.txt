@@ -273,3 +273,7 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.pdb
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.genruntimeconfig.cache
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\ref\CarPartsShoppingList.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

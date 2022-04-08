@@ -355,3 +355,7 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\D
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\CarPartsShoppingList.pdb
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\CarPartsShoppingList.Core.pdb
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\CarPartsShoppingList.Infrastructure.pdb
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

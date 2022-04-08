@@ -1,5 +1,4 @@
 ﻿using CarPartsShoppingList.Core.ViewModels;
-using System.Web.Mvc;
 
 namespace CarPartsShoppingList.Core.Contracts
 {

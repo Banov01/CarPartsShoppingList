@@ -1,7 +1,7 @@
 ﻿using CarPartsShoppingList.Core.Contracts;
 using CarPartsShoppingList.Infrastructure.Data.Common;
 using CarPartsShoppingList.Infrastructure.Data.Models;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CarPartsShoppingList.Core.Services
 {
@@ -17,8 +17,8 @@ namespace CarPartsShoppingList.Core.Services
             return repo.AllReadonly<T>()
                 .Select(x => new SelectListItem()
                 {
-                    Text = x.Id.ToString(),
-                    Value = x.Name,
+                    Value = x.Id.ToString(),
+                    Text = x.Name,
                 })
                 .ToList();
         }

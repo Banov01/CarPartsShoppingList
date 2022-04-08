@@ -1,5 +1,5 @@
 ﻿using CarPartsShoppingList.Infrastructure.Data.Models;
-using System.Web.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace CarPartsShoppingList.Core.Contracts
 {
