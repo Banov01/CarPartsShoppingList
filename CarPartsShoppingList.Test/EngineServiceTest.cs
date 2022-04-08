@@ -20,9 +20,10 @@ namespace CarPartsShoppingList.Test
         }
 
         [Test]
-        public void Get_Engine_Completed()
+        public void Get_Engine_Is_Not_Null()
         {
-            Assert.Pass();
+            var result = engineService.GetEngines();
+            Assert.IsNotNull(result, "Engine is null.");
         }
     }
 }

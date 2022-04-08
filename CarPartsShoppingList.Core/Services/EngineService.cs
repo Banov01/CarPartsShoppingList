@@ -15,7 +15,7 @@ namespace CarPartsShoppingList.Core.Services
 
         public EngineViewModel GetEngineModel(int id)
         {
-            var test = repo.AllReadonly<Engine>()
+            return repo.AllReadonly<Engine>()
                 .Where(x => x.Id == id)
                 .Select(x => new EngineViewModel()
                 {
@@ -29,11 +29,6 @@ namespace CarPartsShoppingList.Core.Services
                 })
                 .FirstOrDefault();
 
-            if (test == null)
-            {
-                return new EngineViewModel();
-            }
-            return test;
         }
 
         public IQueryable<EngineViewModel> GetEngines()
