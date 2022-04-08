@@ -29,7 +29,7 @@ namespace CarPartsShoppingList.Test
         public void Get_User_By_Id_Is_Complete()
         {
             var result = userService.GetUserById("");
-            Assert.That(result.IsCompleted, "Get user by id is'n completed.");
+            Assert.That(result.IsCompleted, "Get user by id is not completed.");
         }
     }
 }

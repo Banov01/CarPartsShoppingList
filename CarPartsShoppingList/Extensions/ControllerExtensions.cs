@@ -9,11 +9,11 @@ namespace CarPartsShoppingList.Extensions
         {
             if (result)
             {
-                controller.TempData[MessageConstant.SuccessMessage] = MessageConstant.Values.SaveOK;
+                controller.TempData[MessageConstant.SuccessMessage] = MessageConstant.SaveOK;
             }
             else
             {
-                controller.TempData[MessageConstant.ErrorMessage] = MessageConstant.Values.SaveFailed;
+                controller.TempData[MessageConstant.ErrorMessage] = MessageConstant.SaveFailed;
             }
         }
     }

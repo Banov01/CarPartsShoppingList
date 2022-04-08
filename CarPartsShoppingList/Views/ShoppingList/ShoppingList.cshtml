@@ -5,6 +5,15 @@
     ViewData["Title"] = "Shopping list name";
 }
 
+<div class="row">
+    <div class="col-md-12 test-right pd-15">
+        <a asp-area="Admin" asp-action="Add" asp-controller="AddShoppingList" class="btn btn-success btn-flat">
+            <i class="fa fa-plus"></i>
+            Add
+        </a>
+    </div>
+</div>
+
 <body>
     <hr />
     <table style="width:100%">
@@ -18,8 +27,8 @@
             <tr>
                 <td>@shoppingList.ShoppingListName</td>
                 <td>@shoppingList.ShoppingListItems</td>
-                <td> <a asp-area="admin" asp-action="add" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-succes btn-flat">Add</a><td/>
-                <td> <a asp-area="admin" asp-action="edit" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-danger btn-flat">Edit</a><td/>
+                <td> <a asp-area="admin" asp-action="Edit" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-danger btn-flat">Edit</a>
+                <td />
             </tr>
         }
     </table>

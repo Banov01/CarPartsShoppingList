@@ -20,8 +20,6 @@
                 <td>@shoppingListItem.ShoppingListItemName</td>
                 <td>@shoppingListItem.ShoppingListItemPrice</td>
                 <td>@shoppingListItem.IsPurchased</td>
-                <td> <a asp-area="admin" asp-action="add" asp-controller="ShoppingListItem" asp-route-id="@shoppingListItem.Id" class="btn btn-succes btn-flat">Add</a><td/>
-                <td> <a asp-area="admin" asp-action="edit" asp-controller="ShoppingListItem" asp-route-id="@shoppingListItem.Id" class="btn btn-danger btn-flat">Edit</a><td/>
             </tr>
         }
     </table>
