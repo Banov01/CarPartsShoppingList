@@ -90,9 +90,9 @@ namespace CarPartsShoppingList.Core.Services
                 result = true;
             }
 
-            catch (Exception ex)
+            catch (Exception)
             {
-                Console.WriteLine(ex);
+                throw new ArgumentException("Cant save data");
             }
             return result;
         }

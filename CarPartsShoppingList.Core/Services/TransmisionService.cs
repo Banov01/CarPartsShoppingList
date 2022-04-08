@@ -71,9 +71,9 @@ namespace CarPartsShoppingList.Core.Services
                 result = true;
             }
 
-            catch (Exception ex)
+            catch (Exception)
             {
-                //log error
+                throw new ArgumentException("Cant save data");
             }
             return result;
         }

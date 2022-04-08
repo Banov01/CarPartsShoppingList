@@ -50,15 +50,5 @@ namespace CarPartsShoppingList.Areas.Admin.Controllers
 
             return RedirectToAction("Index", "Engine");
         }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteEngine(int id)
-        {
-            var result = await engineService.DeleteEngine(id);
-
-            this.ShowNotificationMessageOnUI(result);
-
-            return RedirectToAction("Index", "Engine");
-        }
     }
 }

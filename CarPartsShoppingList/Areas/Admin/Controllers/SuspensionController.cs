@@ -47,15 +47,5 @@ namespace CarPartsShoppingList.Areas.Admin.Controllers
 
             return RedirectToAction("Index", "Suspension");
         }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteSuspension(int id)
-        {
-            var result = await suspensionService.DeleteSuspension(id);
-
-            this.ShowNotificationMessageOnUI(result);
-
-            return RedirectToAction("Index", "Suspension");
-        }
     }
 }

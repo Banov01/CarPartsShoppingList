@@ -45,15 +45,5 @@ namespace CarPartsShoppingList.Areas.Admin.Controllers
 
             return RedirectToAction("Index", "Transmision");
         }
-
-        [HttpPost]
-        public async Task<IActionResult> DeleteTransmision(int id)
-        {
-            var result = await transmisionService.DeleteTransmision(id);
-
-            this.ShowNotificationMessageOnUI(result);
-
-            return RedirectToAction("Index", "Transmision");
-        }
     }
 }
