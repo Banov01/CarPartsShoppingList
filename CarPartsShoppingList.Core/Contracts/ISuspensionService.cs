@@ -2,9 +2,9 @@
 
 namespace CarPartsShoppingList.Core.Contracts
 {
-    public interface ISuspensionService
+    public interface ISuspensionService : IBaseInterface
     {
-        public IQueryable<SuspensionViewModel> GetSuspensions();
+        IQueryable<SuspensionViewModel> GetSuspensions();
 
         Task<bool> SaveData(SuspensionViewModel model);
         SuspensionViewModel GetSuspensionModel(int id);

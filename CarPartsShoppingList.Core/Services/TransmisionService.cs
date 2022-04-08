@@ -5,12 +5,10 @@ using CarPartsShoppingList.Infrastructure.Data.Models;
 
 namespace CarPartsShoppingList.Core.Services
 {
-    public class TransmisionService : ITransmisionService
+    public class TransmisionService : BaseService, ITransmisionService
     {
-        private readonly IRepository repo;
-        public TransmisionService(IRepository _repo)
+        public TransmisionService(IRepository _repo) : base(_repo)
         {
-            repo = _repo;
         }
 
         public TransmisionViewModel GetTransmisionModel(int id)

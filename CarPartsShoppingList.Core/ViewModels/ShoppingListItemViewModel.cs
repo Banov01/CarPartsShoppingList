@@ -10,10 +10,16 @@ namespace CarPartsShoppingList.Core.ViewModels
         [Required]
         [DisplayName("Item name")]
         [StringLength(15)]
-        public string ShoppingListItemName { get; set; }
+        public string ShoppingListName { get; set; }
 
-        [DisplayName("Item price")]
-        public decimal ShoppingListItemPrice { get; set; }
+        [DisplayName("Suspension")]
+        public string Suspension { get; set; }
+
+        [DisplayName("Transmision")]
+        public string Transmision { get; set; }
+
+        [DisplayName("Engine")]
+        public string Engine { get; set; }
 
         [DisplayName("Purchased")]
         public bool IsPurchased { get; set; }

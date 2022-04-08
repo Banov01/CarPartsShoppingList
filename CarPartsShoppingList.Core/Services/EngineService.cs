@@ -2,15 +2,19 @@
 using CarPartsShoppingList.Core.ViewModels;
 using CarPartsShoppingList.Infrastructure.Data.Common;
 using CarPartsShoppingList.Infrastructure.Data.Models;
+using System.Web.Mvc;
 
 namespace CarPartsShoppingList.Core.Services
 {
-    public class EngineService : IEngineService
+    public class EngineService : BaseService, IEngineService
     {
-        private readonly IRepository repo;
-        public EngineService(IRepository _repo)
+        public EngineService(IRepository _repo) : base(_repo)
         {
-            repo = _repo;
+        }
+
+        public List<SelectListItem> GetDropDownList()
+        {
+            throw new NotImplementedException();
         }
 
         public EngineViewModel GetEngineModel(int id)

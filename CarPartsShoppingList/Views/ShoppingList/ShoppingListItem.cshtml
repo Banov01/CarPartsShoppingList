@@ -9,16 +9,20 @@
     <hr />
     <table style="width:100%">
         <tr>
-            <th>ShoppingListItemName</th>
-            <th>ShoppingListItemPrice</th>
+            <th>ShoppingListName</th>
+            <th>Engine</th>
+            <th>Suspension</th>
+            <th>Transmision</th>
             <th>IsPurchased</th>
             <th colspan="2">Actions</th>
         </tr>
         @foreach (ShoppingListItemViewModel shoppingListItem in Model)
         {
             <tr>
-                <td>@shoppingListItem.ShoppingListItemName</td>
-                <td>@shoppingListItem.ShoppingListItemPrice</td>
+                <td>@shoppingListItem.ShoppingListName</td>
+                <td>@shoppingListItem.Engine</td>
+                <td>@shoppingListItem.Suspension</td>
+                <td>@shoppingListItem.Transmision</td>
                 <td>@shoppingListItem.IsPurchased</td>
             </tr>
         }

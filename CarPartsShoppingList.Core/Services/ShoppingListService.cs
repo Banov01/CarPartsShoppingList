@@ -6,13 +6,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace CarPartsShoppingList.Core.Services
 {
-    public class ShoppingListService : IShoppingListService
+    public class ShoppingListService : BaseService, IShoppingListService
     {
-        private readonly IRepository repo;
-        public ShoppingListService(IRepository _repo)
+        public ShoppingListService(IRepository _repo) : base(_repo)
         {
-            repo = _repo;
         }
+
+        public async Task Add(ShoppingListItemViewModel model)
+        {
+            await this.repo.AddAsync(model);
+            await this.repo.SaveChangesAsync();
+        }
+
         public ShoppingListViewModel GetShoppingList(int id)
         {
             return repo.All<ShoppingList>()
@@ -57,11 +62,18 @@ namespace CarPartsShoppingList.Core.Services
 
         public IQueryable<ShoppingListViewModel> GetShoppingLists()
         {
+            var engines = repo.
+
             return repo.AllReadonly<ShoppingList>()
                 .Select(x => new ShoppingListViewModel()
                 {
-                    Id = x.Id,
-                    ShoppingListName = x.Name,
+                     Id = x.Id,
+                     ShoppingListName = x.Name,
+                     ShoppingListItems = new ShoppingListItem()
+                     {
+                        Engines= engines
+                     }
+
                 })
                 .AsQueryable();
         }

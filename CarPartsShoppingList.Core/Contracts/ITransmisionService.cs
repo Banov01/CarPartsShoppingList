@@ -2,9 +2,9 @@
 
 namespace CarPartsShoppingList.Core.Contracts
 {
-    public interface ITransmisionService
+    public interface ITransmisionService : IBaseInterface
     {
-        public IQueryable<TransmisionViewModel> GetTransmisions();
+        IQueryable<TransmisionViewModel> GetTransmisions();
 
         Task<bool> SaveData(TransmisionViewModel model);
         TransmisionViewModel GetTransmisionModel(int id);

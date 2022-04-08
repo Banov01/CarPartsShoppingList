@@ -1,6 +1,7 @@
 ﻿using CarPartsShoppingList.Core.Constants;
 using CarPartsShoppingList.Core.Contracts;
 using CarPartsShoppingList.Core.ViewModels;
+using CarPartsShoppingList.Infrastructure.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarPartsShoppingList.Controllers
@@ -8,81 +9,101 @@ namespace CarPartsShoppingList.Controllers
     public class ShoppingListController : Controller
     {
         private readonly IShoppingListService shoppingListService;
+        private readonly IEngineService engineService;
+        private readonly ITransmisionService transmisionService;
+        private readonly ISuspensionService suspensionService;
 
-        public ShoppingListController(IShoppingListService shoppingListService)
+        public ShoppingListController(IShoppingListService shoppingListService, IEngineService engineService, ITransmisionService transmisionService,
+            ISuspensionService suspensionService)
         {
             this.shoppingListService = shoppingListService;
+            this.engineService = engineService;
+            this.transmisionService = transmisionService;
+            this.suspensionService = suspensionService;
         }
 
-        //public IActionResult Index()
-        //{
-        //    return View();
-        //}
+        public IActionResult ShoppingList()
+        {
+            var model = new List<ShoppingListViewModel>();
+            return View(model);
+        }
 
-        //public IActionResult ShoppingListItem(int id)
-        //{
-        //    ViewBag.Id = id;
-        //    return View(id);
-        //}
+        public IActionResult ShoppingListItem(int id)
+        {
+            return View();
+        }
 
-        //[HttpPost]
-        //public IActionResult ShoppingListData()
-        //{
-        //    return View();
-        //}
+        [HttpPost]
+        public IActionResult ShoppingListData()
+        {
+            return View();
+        }
 
-        //[HttpGet]
-        //public IActionResult Add()
-        //{
-        //    //GetViewBags();
-        //}
+        [HttpGet]
+        public IActionResult Add()
+        {
+            var listItems = this.shoppingListService.GetShoppingLists();
 
-        //[HttpGet]
-        //public IActionResult Edit(int id)
-        //{
-        //    GetViewBags();
+            return View();
+        }
 
-        //    var model = shoppingListService.GetShoppingList(id);
+        [HttpPost]
+        public async Task<IActionResult> Add(ShoppingListItemViewModel model)
+        {
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
 
-        //    return View(nameof(Edit), model);
-        //}
+            await this.shoppingListService.Add(model);
 
-        //[HttpPost]
-        //public IActionResult Edit(ShoppingListItemViewModel model)
-        //{
-        //    GetViewBags();
+            return this.RedirectToAction("ShoppingList");
+        }
 
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return View(model);
-        //    }
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var model = shoppingListService.GetShoppingList(id);
 
-        //    var result = shoppingListService.SaveData(model);
+            return View(nameof(Edit), model);
+        }
 
-        //    if (result)
-        //    {
-        //        TempData[MessageConstant.SuccessMessage] = MessageConstant.SaveOK;
-        //    }
-        //    else
-        //    {
-        //        TempData[MessageConstant.ErrorMessage] = MessageConstant.SaveFailed;
-        //    }
+        [HttpPost]
+        public async Task<IActionResult> Edit(ShoppingListViewModel model)
+        {
 
-        //    return View(model);
-        //}
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
 
-        //[HttpPost]
-        //public IActionResult Check(int id)
-        //{
-        //    var shoppingListItem = shoppingListService.GetShoppingListItemById(id);
+            var result = await shoppingListService.SaveData(model);
 
-        //    return View();
-        //}
+            if (result)
+            {
+                TempData[MessageConstant.SuccessMessage] = MessageConstant.SaveOK;
+            }
+            else
+            {
+                TempData[MessageConstant.ErrorMessage] = MessageConstant.SaveFailed;
+            }
 
-        //TODO DropDownList
-        //private void GetViewBags()
-        //{
-        //    ViewBag.Products = GetDropDownList<Engine>();
-        //}
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Check(int id)
+        {
+            var shoppingListItem = shoppingListService.GetShoppingListItemById(id);
+
+            return View();
+        }
+
+        public void GetViewBags()
+        {
+            ViewBag.EngineList = engineService.GetDropDownList<Engine>();
+            ViewBag.SuspensionList = suspensionService.GetDropDownList<Suspension>();
+            ViewBag.TransmisionList = transmisionService.GetDropDownList<Transmision>();
+        }
     }
 }

@@ -5,12 +5,10 @@ using CarPartsShoppingList.Infrastructure.Data.Models;
 
 namespace CarPartsShoppingList.Core.Services
 {
-    public class SuspensionService : ISuspensionService
+    public class SuspensionService : BaseService, ISuspensionService
     {
-        private readonly IRepository repo;
-        public SuspensionService(IRepository _repo)
+        public SuspensionService(IRepository _repo) : base(_repo)
         {
-            repo = _repo;
         }
 
         public SuspensionViewModel GetSuspensionModel(int id)

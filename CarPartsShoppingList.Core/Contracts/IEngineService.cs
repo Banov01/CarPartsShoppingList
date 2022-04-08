@@ -1,10 +1,11 @@
 ﻿using CarPartsShoppingList.Core.ViewModels;
+using System.Web.Mvc;
 
 namespace CarPartsShoppingList.Core.Contracts
 {
-    public interface IEngineService
+    public interface IEngineService : IBaseInterface
     {
-        public IQueryable<EngineViewModel> GetEngines();
+        IQueryable<EngineViewModel> GetEngines();
 
         Task<bool> SaveData(EngineViewModel model);
 

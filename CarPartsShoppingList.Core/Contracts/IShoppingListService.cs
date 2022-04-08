@@ -2,11 +2,13 @@
 
 namespace CarPartsShoppingList.Core.Contracts
 {
-    public interface IShoppingListService
+    public interface IShoppingListService : IBaseInterface
     {
-        public IQueryable<ShoppingListViewModel> GetShoppingLists();
+        Task Add(ShoppingListItemViewModel model);
 
-        public IQueryable<ShoppingListItemViewModel> GetShoppingListItems(int shoppingListId);
+        IQueryable<ShoppingListViewModel> GetShoppingLists();
+
+        IQueryable<ShoppingListItemViewModel> GetShoppingListItems(int shoppingListId);
 
         Task<bool> SaveData(ShoppingListViewModel model);
 
