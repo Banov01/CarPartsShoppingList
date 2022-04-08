@@ -162,6 +162,9 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
+              "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj": {
+                "projectPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj"
+              },
               "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\CarPartsShoppingList.csproj": {
                 "projectPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\CarPartsShoppingList.csproj"
               }

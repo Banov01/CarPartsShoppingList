@@ -2,8 +2,17 @@
 @model List<SuspensionViewModel>
 
 @{
-    ViewData["Title"] = "Окачване";
+    ViewData["Title"] = "Suspension";
 }
+
+<div class="row">
+    <div class="col-md-12 test-right pd-15">
+    <a asp-area="Admin" asp-action="Add" asp-controller="Suspension" class="btn btn-success btn-flat">
+        <i class="fa fa-plus"></i>
+            Add
+    </a>
+  </div>
+</div>
 
 <body>
     <hr />
@@ -12,6 +21,7 @@
             <th>SuspensionName</th>
             <th>SuspensionPrice</th>
             <th>SuspensionCode</th>
+            <th colspan="2">Actions</th>
         </tr>
         @foreach (SuspensionViewModel suspension in Model)
         {
@@ -19,7 +29,7 @@
                 <td>@suspension.SuspensionName</td>
                 <td>@suspension.SuspensionPrice</td>
                 <td>@suspension.SuspensionCode</td>
-                <a asp-controller="Suspension" asp-action="Edit" asp-route-id="@suspension.Id">Edit</a>
+                <td> <a asp-area="admin" asp-action="Edit" asp-controller="Suspension" asp-route-id="@suspension.Id" class="btn btn-danger btn-flat">Edit</a><td/>
             </tr>
         }
     </table>

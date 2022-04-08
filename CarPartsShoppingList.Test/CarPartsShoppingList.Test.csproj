@@ -16,6 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\CarPartsShoppingList.Core\CarPartsShoppingList.Core.csproj" />
     <ProjectReference Include="..\CarPartsShoppingList\CarPartsShoppingList.csproj" />
   </ItemGroup>
 

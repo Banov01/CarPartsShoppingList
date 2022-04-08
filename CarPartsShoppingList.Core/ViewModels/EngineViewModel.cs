@@ -8,28 +8,28 @@ namespace CarPartsShoppingList.Core.ViewModels
         public int Id { get; set; }
 
         [Required]
-        [DisplayName("Име на двигател")]
+        [DisplayName("Engine name")]
         [StringLength(40)]
         public string EngineName { get; set; }
 
         [Required]
-        [DisplayName("Категория двигател")]
+        [DisplayName("Engine category")]
         [StringLength(30)]
         public string EngineCategory { get; set; }
 
         [Required]
-        [DisplayName("Кубатура на днигател")]
+        [DisplayName("Cubature")]
         public double Cubature { get; set; }
 
         [Required]
-        [DisplayName("Цилиндри на двигател")]
+        [DisplayName("Cilinders")]
         public int Cilinders { get; set; }
 
-        [DisplayName("Цена на двигател")]
+        [DisplayName("Engine price")]
         public decimal EnginePrice { get; set; }
 
         [Required]
-        [DisplayName("Код на двигател")]
+        [DisplayName("Engine code")]
         [StringLength(30)]
         public string EngineCode { get; set; }
 

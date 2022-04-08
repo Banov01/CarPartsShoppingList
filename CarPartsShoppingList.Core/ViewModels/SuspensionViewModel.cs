@@ -8,15 +8,15 @@ namespace CarPartsShoppingList.Core.ViewModels
         public int Id { get; set; }
 
         [Required]
-        [DisplayName("Име на окачване")]
+        [DisplayName("Suspension name")]
         [StringLength(40)]
         public string SuspensionName { get; set; }
 
-        [DisplayName("Цена на окачване")]
+        [DisplayName("Suspension price")]
         public decimal SuspensionPrice { get; set; }
 
         [Required]
-        [DisplayName("Код на окачване")]
+        [DisplayName("Suspension code")]
         [StringLength(30)]
         public string SuspensionCode { get; set; }
 

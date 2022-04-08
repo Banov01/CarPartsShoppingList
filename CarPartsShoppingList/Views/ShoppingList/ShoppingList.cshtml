@@ -2,7 +2,7 @@
 @model List<ShoppingListViewModel>
 
 @{
-    ViewData["Title"] = "Списък за пазаруване";
+    ViewData["Title"] = "Shopping list name";
 }
 
 <body>
@@ -11,14 +11,15 @@
         <tr>
             <th>ShoppingListName</th>
             <th>ShoppingListItems</th>
+            <th colspan="2">Actions</th>
         </tr>
         @foreach (ShoppingListViewModel shoppingList in Model)
         {
             <tr>
                 <td>@shoppingList.ShoppingListName</td>
                 <td>@shoppingList.ShoppingListItems</td>
-                <a asp-controller="ShoppingList" asp-action="Add" class="btn btn-success single-click-submit" asp-route-id="@shoppingList.Id">Add</a>
-                <a asp-controller="ShoppingList" asp-action="Edit" class="btn btn-danger" asp-route-id="@shoppingList.Id">Edit</a>
+                <td> <a asp-area="admin" asp-action="add" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-succes btn-flat">Add</a><td/>
+                <td> <a asp-area="admin" asp-action="edit" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-danger btn-flat">Edit</a><td/>
             </tr>
         }
     </table>

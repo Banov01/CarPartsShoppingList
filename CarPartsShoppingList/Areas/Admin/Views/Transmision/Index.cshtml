@@ -2,8 +2,17 @@
 @model List<TransmisionViewModel>
 
 @{
-    ViewData["Title"] = "Скорости";
+    ViewData["Title"] = "Transmision";
 }
+
+<div class="row">
+    <div class="col-md-12 test-right pd-15">
+    <a asp-area="Admin" asp-action="Add" asp-controller="Transmision" class="btn btn-success btn-flat">
+        <i class="fa fa-plus"></i>
+            Add
+    </a>
+  </div>
+</div>
 
 <body>
     <hr />
@@ -12,6 +21,7 @@
             <th>TransmisionName</th>
             <th>TransmisionPrice</th>
             <th>TransmisionCode</th>
+            <th colspan="2">Actions</th>
         </tr>
         @foreach (TransmisionViewModel transmision in Model)
         {
@@ -19,7 +29,7 @@
                 <td>@transmision.TransmisionName</td>
                 <td>@transmision.TransmisionPrice</td>
                 <td>@transmision.TransmisionCode</td>
-                <a asp-controller="Transmision" asp-action="Edit" asp-route-id="@transmision.Id">Edit</a>
+                <td> <a asp-area="admin" asp-action="Edit" asp-controller="Transmision" asp-route-id="@transmision.Id" class="btn btn-danger btn-flat">Edit</a><td/>
             </tr>
         }
     </table>

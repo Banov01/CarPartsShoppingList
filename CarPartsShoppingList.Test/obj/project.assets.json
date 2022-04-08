@@ -9679,6 +9679,7 @@
   "projectFileDependencyGroups": {
     "net6.0": [
       "CarPartsShoppingList >= 1.0.0",
+      "CarPartsShoppingList.Core >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.11.0",
       "Moq >= 4.17.2",
       "NUnit >= 3.13.2",
@@ -9713,6 +9714,9 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj": {
+              "projectPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList.Core\\CarPartsShoppingList.Core.csproj"
+            },
             "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\CarPartsShoppingList.csproj": {
               "projectPath": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\CarPartsShoppingList.csproj"
             }

@@ -8,14 +8,14 @@ namespace CarPartsShoppingList.Core.ViewModels
         public int Id { get; set; }
 
         [Required]
-        [DisplayName("Име на предмета")]
+        [DisplayName("Item name")]
         [StringLength(40)]
         public string ShoppingListItemName { get; set; }
 
-        [DisplayName("Цена на предмета")]
+        [DisplayName("Item price")]
         public decimal ShoppingListItemPrice { get; set; }
 
-        [DisplayName("Закупен")]
+        [DisplayName("Purchased")]
         public bool IsPurchased { get; set; }
 
     }

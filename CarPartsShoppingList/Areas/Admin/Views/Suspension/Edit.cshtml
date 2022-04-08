@@ -1,7 +1,7 @@
 ﻿@model SuspensionViewModel
 
 @{
-    ViewData ["Title"] = "Добавяне на окачване";
+    ViewData ["Title"] = "Add suspension";
 }
 
 <div class="row">
@@ -14,12 +14,15 @@
                 <partial name="_SaveFormContent" model="@("#saveContainer")" />
 
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.SuspensionName)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.SuspensionName)</div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.SuspensionCode)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.SuspensionCode)</div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.SuspensionPrice)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.SuspensionPrice)</div>
                 </div>
             </div>
@@ -27,7 +30,7 @@
             <div class="form-group">
 
                 <input type="submit" value="Save" class="btn btn-success single-click-submit" />
-                <a asp-controller="Suspension" asp-action="Index" class="btn btn-danger">Назад</a>
+                <a asp-controller="Suspension" asp-action="Index" class="btn btn-danger">Back</a>
             </div>
         </form>
     </div>

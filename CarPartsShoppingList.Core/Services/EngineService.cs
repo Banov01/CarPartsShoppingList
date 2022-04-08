@@ -13,24 +13,6 @@ namespace CarPartsShoppingList.Core.Services
             repo = _repo;
         }
 
-        public async Task<bool> DeleteEngine(int id)
-        {
-            bool result = false;
-            try
-            {
-                await repo.DeleteAsync<Engine>(id);
-
-                result = true;
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-
-            return result;
-        }
-
         public EngineViewModel GetEngineModel(int id)
         {
             var test = repo.AllReadonly<Engine>()

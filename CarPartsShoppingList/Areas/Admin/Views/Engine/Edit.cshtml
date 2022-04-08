@@ -1,7 +1,7 @@
 ﻿@model EngineViewModel
 
 @{
-    ViewData ["Title"] = "Добавяне на двигател";
+    ViewData ["Title"] = "Add engine";
 }
 
 <div class="row">
@@ -14,21 +14,27 @@
                 <partial name="_SaveFormContent" model="@("#saveContainer")" />
 
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.EngineName)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.EngineName)</div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.EngineCategory)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.EngineCategory)</div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.EngineCode)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.EngineCode)</div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.Cilinders)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.Cilinders)</div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.Cubature)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.Cubature)</div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.EnginePrice)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.EnginePrice)</div>
                 </div>
             </div>
@@ -36,7 +42,7 @@
             <div class="form-group">
 
                 <input type="submit" value="Save" class="btn btn-success single-click-submit" />
-                <a asp-controller="Engine" asp-action="Index" class="btn btn-danger">Назад</a>
+                <a asp-controller="Engine" asp-action="Index" class="btn btn-danger">Back</a>
             </div>
         </form>
     </div>

@@ -31,7 +31,5 @@ namespace CarPartsShoppingList.Controllers
 
             return View("Edit", model);
         }
-
-
     }
 }

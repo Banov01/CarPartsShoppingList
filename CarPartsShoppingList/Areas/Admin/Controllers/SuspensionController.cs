@@ -20,7 +20,7 @@ namespace CarPartsShoppingList.Areas.Admin.Controllers
             return View(tableViewModel);
         }
 
-        public IActionResult AddSuspension()
+        public IActionResult Add()
         {
             var viewModel = new SuspensionViewModel();
 

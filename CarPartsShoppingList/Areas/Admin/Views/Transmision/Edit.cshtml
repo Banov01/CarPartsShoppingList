@@ -1,7 +1,7 @@
 ﻿@model TransmisionViewModel
 
 @{
-    ViewData ["Title"] = "Добавяне на скорости";
+    ViewData ["Title"] = "Add transmision";
 }
 
 <div class="row">
@@ -14,12 +14,15 @@
                 <partial name="_SaveFormContent" model="@("#saveContainer")" />
 
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.TransmisionName)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.TransmisionName)</div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.TransmisionCode)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.TransmisionCode)</div>
                 </div>
                 <div class="row">
+                    <div class="col-lg-6">@Html.LabelFor(x => x.TransmisionPrice)</div>
                     <div class="col-lg-6">@Html.EditorFor(x => x.TransmisionPrice)</div>
                 </div>
             </div>
@@ -27,7 +30,7 @@
             <div class="form-group">
 
                 <input type="submit" value="Save" class="btn btn-success single-click-submit" />
-                <a asp-controller="Transmision" asp-action="Index" class="btn btn-danger">Назад</a>
+                <a asp-controller="Transmision" asp-action="Index" class="btn btn-danger">Back</a>
             </div>
         </form>
     </div>

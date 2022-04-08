@@ -2,8 +2,17 @@
 @model List<EngineViewModel>
 
 @{
-    ViewData["Title"] = "Двигател";
+    ViewData["Title"] = "Engine";
 }
+
+<div class="row">
+    <div class="col-md-12 test-right pd-15">
+    <a asp-area="Admin" asp-action="Add" asp-controller="Engine" class="btn btn-success btn-flat">
+        <i class="fa fa-plus"></i>
+            Add
+    </a>
+  </div>
+</div>
 
 <body>
     <hr />
@@ -15,6 +24,7 @@
             <th>Cilinders</th>
             <th>EnginePrice</th>
             <th>EngineCode</th>
+            <th colspan="2">Actions</th>
         </tr>
 
         @foreach (EngineViewModel engine in Model)
@@ -26,8 +36,8 @@
                 <td>@engine.Cilinders</td>
                 <td>@engine.EnginePrice</td>
                 <td>@engine.EngineCode</td>
-                <a asp-controller="Engine" asp-action="Add" class="btn btn-success single-click-submit" asp-route-id="@engine.Id">Add</a>
-                <a asp-controller="Engine" asp-action="Edit"class="btn btn-danger" asp-route-id="@engine.Id">Edit</a>
+                <td> <a asp-area="admin" asp-action="edit" asp-controller="Engine" asp-route-id="@engine.Id" class="btn btn-danger btn-flat">Edit</a>
+                <td />
             </tr>
         }
     </table>

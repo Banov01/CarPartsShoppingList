@@ -9,11 +9,11 @@ namespace CarPartsShoppingList.Core.ViewModels
         public int Id { get; set; }
 
         [Required]
-        [DisplayName("Име на списък за пазаруване")]
+        [DisplayName("Shopping list name")]
         [StringLength(40)]
         public string ShoppingListName { get; set; }
 
-        [DisplayName("Списък с продукти")]
+        [DisplayName("Shopping list items")]
         public List<ShoppingListItem> ShoppingListItems { get; set; }
     }
 }

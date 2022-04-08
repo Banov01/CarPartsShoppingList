@@ -8,15 +8,15 @@ namespace CarPartsShoppingList.Core.ViewModels
         public int Id { get; set; }
 
         [Required]
-        [DisplayName("Скорости")]
+        [DisplayName("Transmision")]
         [StringLength(40)]
         public string TransmisionName { get; set; }
 
-        [DisplayName("Цена на скоростите")]
+        [DisplayName("Transmision price")]
         public decimal TransmisionPrice { get; set; }
 
         [Required]
-        [DisplayName("Код на скоростите")]
+        [DisplayName("Transmision code")]
         [StringLength(30)]
         public string TransmisionCode { get; set; }
 

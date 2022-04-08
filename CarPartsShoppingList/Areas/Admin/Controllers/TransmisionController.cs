@@ -19,7 +19,7 @@ namespace CarPartsShoppingList.Areas.Admin.Controllers
 
             return View(tableViewModel);
         }
-        public IActionResult AddTransmision()
+        public IActionResult Add()
         {
             var viewModel = new TransmisionViewModel();
 
