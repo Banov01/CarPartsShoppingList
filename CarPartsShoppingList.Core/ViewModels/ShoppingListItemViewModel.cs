@@ -8,7 +8,7 @@ namespace CarPartsShoppingList.Core.ViewModels
         public int Id { get; set; }
 
         [Required]
-        [DisplayName("Shopping list")]
+        [DisplayName("Shopping list name")]
         [StringLength(15)]
         public string ShoppingListName { get; set; }
 

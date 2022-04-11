@@ -29,7 +29,9 @@ namespace CarPartsShoppingList.Controllers
         public IActionResult ShoppingList()
         {
             var model = new List<ShoppingListViewModel>();
-            return View(model);
+            var tableViewModel = shoppingListService.GetShoppingLists().ToList();
+
+            return View(tableViewModel);
         }
 
         public IActionResult ShoppingListItem(int id)
