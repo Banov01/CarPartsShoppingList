@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using CarPartsShoppingList.Infrastructure.Data.Identity;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CarPartsShoppingList.Infrastructure.Data.Models
@@ -7,6 +8,10 @@ namespace CarPartsShoppingList.Infrastructure.Data.Models
     [DisplayName("ShoppingList")]
     public class ShoppingList : BaseModel
     {
+        public string ApplicationUserId {get;set;}
+
+        [ForeignKey (nameof(ApplicationUserId))]
+        public ApplicationUser ApplicationUser {get;set;}
         public List<ShoppingListItem> ShoppingListItems { get; set; }
     }
 }

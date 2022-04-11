@@ -30,7 +30,8 @@ namespace CarPartsShoppingList.Controllers
 
         public IActionResult ShoppingListItem(int id)
         {
-            return View();
+            ViewBag.Id = id;
+            return View(id);
         }
 
         [HttpPost]
@@ -43,7 +44,6 @@ namespace CarPartsShoppingList.Controllers
         public IActionResult Add()
         {
             GetViewBags();
-
             var listItems = this.shoppingListService.GetShoppingLists();
 
             return View();
@@ -65,6 +65,7 @@ namespace CarPartsShoppingList.Controllers
         [HttpGet]
         public IActionResult Edit(int id)
         {
+            GetViewBags();
             var model = shoppingListService.GetShoppingList(id);
 
             return View(nameof(Edit), model);
@@ -73,6 +74,7 @@ namespace CarPartsShoppingList.Controllers
         [HttpPost]
         public async Task<IActionResult> Edit(ShoppingListViewModel model)
         {
+            GetViewBags();
 
             if (!ModelState.IsValid)
             {

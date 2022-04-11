@@ -14,7 +14,14 @@ namespace CarPartsShoppingList.Core.Services
 
         public async Task Add(ShoppingListItemViewModel model)
         {
-            await this.repo.AddAsync(model);
+            var shoppingListItem = new ShoppingListItem()
+            {
+
+                EngineId = model.Engine,
+                SuspensionId = model.Suspension,
+                TransmissionId=model.Transmision,
+                
+            };
             await this.repo.SaveChangesAsync();
         }
 
@@ -38,9 +45,6 @@ namespace CarPartsShoppingList.Core.Services
                 {
                     Id = x.Id,
                     ShoppingListName = x.Name,
-                    //Engine = x.Engine,
-                    //Transmision=x.Transmission,
-                    //Suspension=x.Suspension,
                     IsPurchased = x.IsChecked,
                     
                 })
@@ -67,6 +71,8 @@ namespace CarPartsShoppingList.Core.Services
             return repo.AllReadonly<ShoppingList>()
                 .Select(x => new ShoppingListViewModel()
                 {
+                    Id=x.Id,
+                    ShoppingListName=x.Name,
                 })
                 .AsQueryable();
         }
