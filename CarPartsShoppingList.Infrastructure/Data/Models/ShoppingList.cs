@@ -8,6 +8,10 @@ namespace CarPartsShoppingList.Infrastructure.Data.Models
     [DisplayName("ShoppingList")]
     public class ShoppingList : BaseModel
     {
+        public ShoppingList()
+        {
+            ShoppingListItems = new List<ShoppingListItem>();
+        }
         public string ApplicationUserId {get;set;}
 
         [ForeignKey (nameof(ApplicationUserId))]

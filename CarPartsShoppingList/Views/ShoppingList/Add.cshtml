@@ -9,9 +9,10 @@
 
 <div>
     <form method="post">
+        @Html.HiddenFor(x => x. ApplicationUserId)
         <div>
             <label asp-for="@Model.ShoppingListName" class="control-label"></label>
-            @Html.EditorFor(x => x. ShoppingListName)
+            @Html.EditorFor(x => x. ShoppingListName, new { htmlAttributes = new { @class = "form-control" } })
         </div>
 
         <div>

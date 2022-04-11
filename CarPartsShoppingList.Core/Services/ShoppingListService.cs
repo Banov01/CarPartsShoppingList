@@ -14,14 +14,21 @@ namespace CarPartsShoppingList.Core.Services
 
         public async Task Add(ShoppingListItemViewModel model)
         {
-            var shoppingListItem = new ShoppingListItem()
+            var shoppingList = new ShoppingList()
             {
-
+                ApplicationUserId = model.ApplicationUserId,
+                Name = model.ShoppingListName
+            };
+            
+            shoppingList.ShoppingListItems.Add(
+             new ShoppingListItem()
+            {
                 EngineId = model.Engine,
                 SuspensionId = model.Suspension,
                 TransmissionId=model.Transmision,
-                
-            };
+            });
+
+            await this.repo.AddAsync(shoppingList);
             await this.repo.SaveChangesAsync();
         }
 

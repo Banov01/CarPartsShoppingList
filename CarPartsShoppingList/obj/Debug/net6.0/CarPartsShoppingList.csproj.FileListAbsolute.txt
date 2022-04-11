@@ -15,6 +15,7 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.AspNetCore.Razor.Language.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Build.Locator.dll
@@ -34,6 +35,7 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.DiaSymReader.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -41,6 +43,7 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
@@ -60,6 +63,7 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\NuGet.Common.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\NuGet.Configuration.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\NuGet.DependencyResolver.Core.dll
@@ -273,7 +277,3 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.pdb
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.genruntimeconfig.cache
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\ref\CarPartsShoppingList.dll
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.DotNet.PlatformAbstractions.dll
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll

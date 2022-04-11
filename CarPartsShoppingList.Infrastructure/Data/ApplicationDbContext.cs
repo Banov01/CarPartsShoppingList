@@ -11,6 +11,30 @@ namespace CarPartsShoppingList.Data
             : base(options)
         {
         }
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+            builder.Entity<ShoppingList>()
+                .Property(x => x.Code)
+                .IsRequired(false);
+
+            builder.Entity<ShoppingList>()
+                .Property(x => x.IsChecked)
+                .HasDefaultValue(true);
+
+            builder.Entity<ShoppingListItem>()
+                .Property(x => x.Code)
+                .IsRequired(false);
+
+            builder.Entity<ShoppingListItem>()
+                .Property(x => x.IsChecked)
+                .HasDefaultValue(true);
+
+            builder.Entity<ShoppingListItem>()
+                .Property(x => x.Name)
+                .IsRequired(false);
+        }
 
         DbSet<Engine> Engines { get; set; }
         DbSet<ShoppingList> ShoppingLists { get; set; }

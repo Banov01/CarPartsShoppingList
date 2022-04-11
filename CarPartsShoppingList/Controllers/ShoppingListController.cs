@@ -1,7 +1,9 @@
 ﻿using CarPartsShoppingList.Core.Constants;
 using CarPartsShoppingList.Core.Contracts;
 using CarPartsShoppingList.Core.ViewModels;
+using CarPartsShoppingList.Infrastructure.Data.Identity;
 using CarPartsShoppingList.Infrastructure.Data.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CarPartsShoppingList.Controllers
@@ -12,14 +14,16 @@ namespace CarPartsShoppingList.Controllers
         private readonly IEngineService engineService;
         private readonly ITransmisionService transmisionService;
         private readonly ISuspensionService suspensionService;
+        private readonly UserManager<ApplicationUser> userManager;
 
         public ShoppingListController(IShoppingListService shoppingListService, IEngineService engineService, ITransmisionService transmisionService,
-            ISuspensionService suspensionService)
+            ISuspensionService suspensionService, UserManager<ApplicationUser> userManager)
         {
             this.shoppingListService = shoppingListService;
             this.engineService = engineService;
             this.transmisionService = transmisionService;
             this.suspensionService = suspensionService;
+            this.userManager = userManager;
         }
 
         public IActionResult ShoppingList()
@@ -44,9 +48,13 @@ namespace CarPartsShoppingList.Controllers
         public IActionResult Add()
         {
             GetViewBags();
+            var shoppingListItem = new ShoppingListItemViewModel()
+            {
+                ApplicationUserId = userManager.GetUserId(User)
+            };
             var listItems = this.shoppingListService.GetShoppingLists();
 
-            return View();
+            return View(shoppingListItem);
         }
 
         [HttpPost]
