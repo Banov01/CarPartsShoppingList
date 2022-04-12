@@ -37,7 +37,10 @@ namespace CarPartsShoppingList.Controllers
         public IActionResult ShoppingListItem(int id)
         {
             ViewBag.Id = id;
-            return View(id);
+            var model = new List<ShoppingListItemViewModel>();
+            var tableViewModel = shoppingListService.GetShoppingListItems(id);
+
+            return View(tableViewModel);
         }
 
         [HttpPost]

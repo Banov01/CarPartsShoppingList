@@ -19,7 +19,7 @@ namespace CarPartsShoppingList.Infrastructure.Data.Models
         public Engine Engine { get; set;}
 
         [ForeignKey(nameof(TransmissionId))]
-        public Transmision Transmission { get; set;}
+        public Transmision Transmision { get; set;}
 
         [ForeignKey(nameof(SuspensionId))]
         public Suspension Suspension { get; set;}

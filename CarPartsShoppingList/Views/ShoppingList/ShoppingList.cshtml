@@ -25,7 +25,7 @@
         {
             <tr>
                 <td>@shoppingList.ShoppingListName</td>
-                <td> <a asp-action="Review" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-info btn-sm">Review</a>
+                <td> <a asp-action="ShoppingListItem" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-info btn-sm">Review</a>
                 <td> <a asp-action="Edit" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-danger btn-flat">Edit</a>
                 <td />
             </tr>

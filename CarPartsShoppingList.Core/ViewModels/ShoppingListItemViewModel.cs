@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using CarPartsShoppingList.Infrastructure.Data.Models;
+using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace CarPartsShoppingList.Core.ViewModels
@@ -12,6 +13,12 @@ namespace CarPartsShoppingList.Core.ViewModels
         [StringLength(15)]
         public string ShoppingListName { get; set; }
 
+        [DisplayName("ProductName")]
+        public string ProductName { get; set; }
+
+        [DisplayName("Code")]
+        public string Code { get; set; }
+
         public string ApplicationUserId { get; set; }
 
         [DisplayName("Suspension")]
@@ -22,6 +29,9 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [DisplayName("Engine")]
         public int Engine { get; set; }
+
+        [DisplayName("Price")]
+        public decimal Price { get; set; }
 
         [DisplayName("Purchased")]
         public bool IsPurchased { get; set; }

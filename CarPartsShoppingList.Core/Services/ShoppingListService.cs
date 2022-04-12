@@ -58,19 +58,53 @@ namespace CarPartsShoppingList.Core.Services
                 .FirstOrDefault();
         }
 
-        public IQueryable<ShoppingListItemViewModel> GetShoppingListItems(int shoppingListId)
+        public List<ShoppingListItemViewModel> GetShoppingListItems(int shoppingListId)
         {
-            return repo.AllReadonly<ShoppingListItem>()
-                .Include(x => x.Transmission)
+            var Engines = repo.AllReadonly<ShoppingListItem>()
                 .Include(x => x.Engine)
-                .Include(x => x.Suspension)
                 .Where(x => x.ShoppingListId == shoppingListId)
                 .Select(x => new ShoppingListItemViewModel()
                 {
                     Id = x.Id,
                     ShoppingListName = x.Name,
+                    ProductName = x.Engine.Name,
+                    Price = x.Engine.Price,
+                    Code = x.Engine.Code,
                     IsPurchased = x.IsChecked,
                 });
+
+            var Suspensions = repo.AllReadonly<ShoppingListItem>()
+                  .Include(x => x.Suspension)
+                  .Where(x => x.ShoppingListId == shoppingListId)
+                  .Select(x => new ShoppingListItemViewModel()
+                  {
+                      Id = x.Id,
+                      ShoppingListName = x.Name,
+                      ProductName = x.Suspension.Name,
+                      Price = x.Suspension.Price,
+                      Code = x.Suspension.Code,
+                      IsPurchased = x.IsChecked,
+                  });
+
+            var Transmisions = repo.AllReadonly<ShoppingListItem>()
+                .Include(x => x.Transmision)
+                .Where(x => x.ShoppingListId == shoppingListId)
+                .Select(x => new ShoppingListItemViewModel()
+                {
+                    Id = x.Id,
+                    ShoppingListName = x.Name,
+                    ProductName = x.Transmision.Name,
+                    Price = x.Transmision.Price,
+                    Code = x.Transmision.Code,
+                    IsPurchased = x.IsChecked,
+                });
+
+            var list = new List<ShoppingListItemViewModel>();
+            list.AddRange(Engines);
+            list.AddRange(Suspensions);
+            list.AddRange(Transmisions);
+
+            return list;
         }
 
         public IQueryable<ShoppingListViewModel> GetShoppingLists()
