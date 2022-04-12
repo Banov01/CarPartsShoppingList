@@ -13,14 +13,12 @@
             <div id="saveContainer">
                 <partial name="_SaveFormContent" model="@("#saveContainer")" />
 
-                @* TODO select2 multi
-                    <div class="row">
-                    <div class="col-lg-6">@Html.EditorFor(x => x.Products, "Select2Multi")</div>
-                    </div>*@
-
                 <div class="row">
                     <div class="col-lg-6">@Html.EditorFor(x => x.ShoppingListName)</div>
                 </div>
+            </div>
+
+            <hr />
 
             <div class="form-group">
 

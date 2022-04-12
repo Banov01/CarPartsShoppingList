@@ -58,7 +58,7 @@ namespace CarPartsShoppingList.Controllers
                 ApplicationUserId = userManager.GetUserId(User)
             };
             var listItems = this.shoppingListService.GetShoppingLists();
-
+            shoppingListItem.IsPurchased = false;
             return View(shoppingListItem);
         }
 
@@ -81,7 +81,11 @@ namespace CarPartsShoppingList.Controllers
             GetViewBags();
             var model = shoppingListService.GetShoppingList(id);
 
-            return View(nameof(Edit), model);
+            var shoppingListItem = new ShoppingListItemViewModel()
+            {
+
+            };
+            return View(nameof(Add), model);
         }
 
         [HttpPost]

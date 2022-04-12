@@ -23,9 +23,9 @@ namespace CarPartsShoppingList.Core.Services
             shoppingList.ShoppingListItems.Add(
              new ShoppingListItem()
             {
-                EngineId = model.Engine,
-                SuspensionId = model.Suspension,
-                TransmissionId=model.Transmision,
+                EngineId = model.Engine[0],
+                SuspensionId = model.Suspension[0],
+                TransmissionId=model.Transmision[0],
             });
 
             await this.repo.AddAsync(shoppingList);

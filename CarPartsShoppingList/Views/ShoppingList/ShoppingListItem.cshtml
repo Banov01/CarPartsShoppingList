@@ -20,7 +20,9 @@
                 <td>@shoppingListItem.ProductName</td>
                 <td>@shoppingListItem.Code</td>
                 <td>@shoppingListItem.Price</td>
-                <td>@shoppingListItem.IsPurchased</td>
+                <td>
+                    <input id="@shoppingListItem.IsPurchased" type="checkbox" value="@shoppingListItem.IsPurchased" checked="@shoppingListItem.IsPurchased" />
+                </td>
             </tr>
         }
     </table>

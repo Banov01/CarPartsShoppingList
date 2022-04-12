@@ -2,9 +2,9 @@
 @model ShoppingListItemViewModel
 
 @{
-    var engineList = (List<SelectListItem>)ViewBag.EngineList;
-    var suspensionList = (List<SelectListItem>)ViewBag.SuspensionList;
-    var transmisionList = (List<SelectListItem>)ViewBag.TransmisionList;
+    var engineList = (IEnumerable<SelectListItem>)ViewBag.EngineList;
+    var suspensionList = (IEnumerable<SelectListItem>)ViewBag.SuspensionList;
+    var transmisionList = (IEnumerable<SelectListItem>)ViewBag.TransmisionList;
 }
 
 <div>
@@ -17,20 +17,20 @@
 
         <div>
             <label asp-for="@Model.Engine" class="control-label"></label>
-            @Html.DropDownListFor(m => m.Engine,
-            new SelectList(engineList, "Value", "Text"), htmlAttributes: new { @class = "form-control"})
+            @Html.ListBoxFor(m => m.Engine,
+            new SelectList(engineList, "Value", "Text"), htmlAttributes: new {  multiple = "multiple", @class = "select2 form-control" })
         </div>
 
         <div>
             <label asp-for="@Model.Suspension" class="control-label"></label>
-            @Html.DropDownListFor(m => m.Suspension,
-            new SelectList(suspensionList, "Value", "Text"), htmlAttributes: new { @class = "form-control"})
+            @Html.ListBoxFor(m => m.Suspension,
+            new SelectList(suspensionList, "Value", "Text"), htmlAttributes: new {  multiple = "multiple", @class = "select2 form-control" })
         </div>
 
         <div>
             <label asp-for="@Model.Transmision" class="control-label"></label>
-            @Html.DropDownListFor(m => m.Transmision,
-            new SelectList(transmisionList, "Value", "Text"), htmlAttributes: new { @class = "form-control"})
+            @Html.ListBoxFor(m => m.Transmision,
+            new SelectList(transmisionList, "Value", "Text"), htmlAttributes: new {  multiple = "multiple", @class = "select2 form-control" })
         </div>
 
         <hr />
