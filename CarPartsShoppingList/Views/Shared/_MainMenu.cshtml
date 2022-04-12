@@ -2,51 +2,60 @@
     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
         <!-- Add icons to the links using the .nav-icon class
              with font-awesome or any other icon font library -->
-        @if(User.IsInRole("ADMINISTRATOR"))
+        @if (User.IsInRole("ADMINISTRATOR"))
         {
-           <li class="nav-item">
-            <a asp-area="Admin" asp-controller="Home" class="nav-link">
-                <i class="fas fa-home"></i>
-                <p>
-                    Home
-                </p>
-            </a>
-        </li> 
-         <li class="nav-item">
-            <a asp-area="Admin" asp-controller="Engine" class="nav-link">
-               <i class="fas fa-truck-pickup"></i>
-                <p>
-                    Engine
-                </p>
-            </a>
-        </li> 
-         <li class="nav-item">
-            <a asp-area="Admin" asp-controller="Suspension" class="nav-link">
-                <i class="fas fa-truck-pickup"></i>
-                <p>
-                    Suspension
-                </p>
-            </a>
-        </li> 
-         <li class="nav-item">
-            <a asp-area="Admin" asp-controller="Transmision" class="nav-link">
-               <i class="fas fa-truck-pickup"></i>
-                <p>
-                    Transmision
-                </p>
-            </a>
+            <li class="nav-item">
+                <a asp-area="Admin" asp-controller="Home" asp-action="Index" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <p>
+                        Home
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-area="Admin" asp-controller="Engine" class="nav-link">
+                    <i class="fas fa-truck-pickup"></i>
+                    <p>
+                        Engine
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-area="Admin" asp-controller="Suspension" class="nav-link">
+                    <i class="fas fa-truck-pickup"></i>
+                    <p>
+                        Suspension
+                    </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a asp-area="Admin" asp-controller="Transmision" class="nav-link">
+                    <i class="fas fa-truck-pickup"></i>
+                    <p>
+                        Transmision
+                    </p>
+                </a>
             </li>
         }
         else
         {
-           <li class="nav-item">
-            <a asp-area="" asp-controller="ShoppingList" asp-action="ShoppingList" class="nav-link">
-                <i class="fas fa-list-alt"></i>
-                <p>
-                    ShoppingList
-                </p>
-            </a>
-        </li> 
+            <li class="nav-item">
+                <a asp-controller="Home" asp-action="Index" class="nav-link">
+                    <i class="fas fa-home"></i>
+                    <p>
+                        Home
+                    </p>
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a asp-area="" asp-controller="ShoppingList" asp-action="ShoppingList" class="nav-link">
+                    <i class="fas fa-list-alt"></i>
+                    <p>
+                        ShoppingList
+                    </p>
+                </a>
+            </li>
         }
     </ul>
 </nav>
