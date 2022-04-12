@@ -7,7 +7,7 @@
 
 <div class="row">
     <div class="col-md-12 test-right pd-15">
-    <a asp-area="Admin" asp-action="Add" asp-controller="Engine" class="btn btn-success btn-flat">
+    <a asp-area="Admin" asp-action="Add" asp-controller="Engine" class="btn btn-success btn-sm">
         <i class="fa fa-plus"></i>
             Add
     </a>
@@ -36,7 +36,7 @@
                 <td>@engine.Cilinders</td>
                 <td>@engine.EnginePrice</td>
                 <td>@engine.EngineCode</td>
-                <td> <a asp-area="admin" asp-action="edit" asp-controller="Engine" asp-route-id="@engine.Id" class="btn btn-danger btn-flat">Edit</a>
+                <td> <a asp-area="admin" asp-action="edit" asp-controller="Engine" asp-route-id="@engine.Id" class="btn btn-danger btn-sm">Edit</a>
                 <td />
             </tr>
         }

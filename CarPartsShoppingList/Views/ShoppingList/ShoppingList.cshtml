@@ -7,7 +7,7 @@
 
 <div class="row">
     <div class="col-md-12 test-right pd-15">
-        <a  asp-controller="ShoppingList" asp-action="Add" class="btn btn-success btn-flat">
+        <a  asp-controller="ShoppingList" asp-action="Add" class="btn btn-success btn-sm">
             <i class="fa fa-plus"></i>
             Add
         </a>
@@ -26,7 +26,7 @@
             <tr>
                 <td>@shoppingList.ShoppingListName</td>
                 <td> <a asp-action="ShoppingListItem" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-info btn-sm">Review</a>
-                <td> <a asp-action="Edit" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-danger btn-flat">Edit</a>
+                <td> <a asp-action="Edit" asp-controller="ShoppingList" asp-route-id="@shoppingList.Id" class="btn btn-danger btn-sm">Edit</a>
                 <td />
             </tr>
         }
