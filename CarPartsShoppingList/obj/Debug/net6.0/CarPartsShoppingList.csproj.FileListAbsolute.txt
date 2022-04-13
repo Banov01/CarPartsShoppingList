@@ -276,3 +276,4 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.pdb
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.genruntimeconfig.cache
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\ref\CarPartsShoppingList.dll
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList\obj\Debug\net6.0\CarPartsShoppingList.MvcApplicationPartsAssemblyInfo.cs

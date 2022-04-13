@@ -5,11 +5,13 @@
     var engineList = (List<SelectListItem>)ViewBag.EngineList;
     var suspensionList = (List<SelectListItem>)ViewBag.SuspensionList;
     var transmisionList = (List<SelectListItem>)ViewBag.TransmisionList;
+
+    var action =  Model.itemId > 0 ? "Edit" : "Add";
 }
 
 <div>
-    <form method="post">
-        @Html.HiddenFor(x => x.Id)
+    <form method="post" asp-action=@action>
+        @Html.HiddenFor(x => x.itemId)
         @Html.HiddenFor(x => x. ApplicationUserId)
         <div>
             <label asp-for="@Model.ShoppingListName" class="control-label"></label>

@@ -10,7 +10,7 @@ namespace CarPartsShoppingList.Core.Contracts
 
         List<ShoppingListItemReviewViewModel> GetShoppingListItems(int shoppingListId);
 
-        Task<bool> SaveData(ShoppingListViewModel model);
+        Task<bool> SaveData(ShoppingListItemViewModel model);
 
         ShoppingListViewModel GetShoppingList(int id);
         ShoppingListItemViewModel GetShoppingListItemById(int id);

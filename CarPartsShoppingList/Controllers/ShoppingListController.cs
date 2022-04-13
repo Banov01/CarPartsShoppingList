@@ -80,19 +80,29 @@ namespace CarPartsShoppingList.Controllers
         public IActionResult Edit(int id)
         {
             GetViewBags();
-            var model = shoppingListService.GetShoppingList(id);
+            var shoppingList = this.shoppingListService.GetShoppingList(id);
 
-            return View(nameof(Edit), model);
+            var model = new ShoppingListItemViewModel()
+            {
+                itemId = shoppingList.ShoppingListItems[0].Id,
+                ApplicationUserId = userManager.GetUserId(User),
+                Engine = shoppingList.ShoppingListItems[0].EngineId,
+                Transmision = shoppingList.ShoppingListItems[0].TransmisionId,
+                Suspension = shoppingList.ShoppingListItems[0].SuspensionId,
+                ShoppingListName = shoppingList.ShoppingListName,
+            };
+           
+            return View(nameof(Add), model);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(ShoppingListViewModel model)
+        public async Task<IActionResult> Edit(ShoppingListItemViewModel model)
         {
             GetViewBags();
 
             if (!ModelState.IsValid)
             {
-                return View(model);
+                return View(nameof(Add), model);
             }
 
             var result = await shoppingListService.SaveData(model);
@@ -100,13 +110,15 @@ namespace CarPartsShoppingList.Controllers
             if (result)
             {
                 TempData[MessageConstant.SuccessMessage] = MessageConstant.SaveOK;
+
+                return RedirectToAction(nameof(ShoppingList));
             }
             else
             {
                 TempData[MessageConstant.ErrorMessage] = MessageConstant.SaveFailed;
             }
 
-            return View(model);
+            return View(nameof(Add), model);
         }
 
         [HttpPost]

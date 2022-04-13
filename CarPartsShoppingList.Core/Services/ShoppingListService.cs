@@ -14,32 +14,41 @@ namespace CarPartsShoppingList.Core.Services
 
         public async Task Add(ShoppingListItemViewModel model)
         {
-            var shoppingList = new ShoppingList()
+            try
             {
-                ApplicationUserId = model.ApplicationUserId,
-                Name = model.ShoppingListName
-            };
-            
-            shoppingList.ShoppingListItems.Add(
-             new ShoppingListItem()
-            {
-                EngineId = model.Engine,
-                SuspensionId = model.Suspension,
-                TransmisionId=model.Transmision,
-            });
+                var shoppingList = new ShoppingList()
+                {
+                    ApplicationUserId = model.ApplicationUserId,
+                    Name = model.ShoppingListName
+                };
 
-            await this.repo.AddAsync(shoppingList);
-            await this.repo.SaveChangesAsync();
+                shoppingList.ShoppingListItems.Add(
+                 new ShoppingListItem()
+                 {
+                     EngineId = model.Engine,
+                     SuspensionId = model.Suspension,
+                     TransmisionId = model.Transmision,
+                 });
+
+                await this.repo.AddAsync(shoppingList);
+                await this.repo.SaveChangesAsync();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
         }
 
         public ShoppingListViewModel GetShoppingList(int id)
         {
-            return repo.All<ShoppingList>()
+            return repo.AllReadonly<ShoppingList>()
+                .Include(x => x.ShoppingListItems)
                 .Where(x => x.Id == id)
                 .Select(x => new ShoppingListViewModel()
                 {
                     Id = x.Id,
-                    ShoppingListName = x.Name
+                    ShoppingListName = x.Name,
+                    ShoppingListItems = x.ShoppingListItems
                 })
                 .FirstOrDefault();
         }
@@ -50,10 +59,10 @@ namespace CarPartsShoppingList.Core.Services
                 .Where(x => x.Id == id)
                 .Select(x => new ShoppingListItemViewModel()
                 {
-                    Id = x.Id,
+                    itemId = x.Id,
                     ShoppingListName = x.Name,
                     IsPurchased = x.IsChecked,
-                    
+
                 })
                 .FirstOrDefault();
         }
@@ -109,20 +118,27 @@ namespace CarPartsShoppingList.Core.Services
             return repo.AllReadonly<ShoppingList>()
                 .Select(x => new ShoppingListViewModel()
                 {
-                    Id=x.Id,
-                    ShoppingListName=x.Name,
+                    Id = x.Id,
+                    ShoppingListName = x.Name,
                 })
                 .AsQueryable();
         }
 
-        public async Task<bool> SaveData(ShoppingListViewModel model)
+        public async Task<bool> SaveData(ShoppingListItemViewModel model)
         {
             try
             {
-                foreach (var item in model.ShoppingListItems)
-                {
-                    await repo.AddAsync(item);
-                }
+                var item = repo.All<ShoppingListItem>()
+                    .Include(x => x.ShoppingList)
+                    .FirstOrDefault(x => x.Id == model.itemId);
+                
+                item.EngineId = model.Engine;
+                item.SuspensionId = model.Suspension;
+                item.TransmisionId = model.Transmision;
+                item.ShoppingList.Name = model.ShoppingListName;
+
+                repo.Update(item);
+
                 repo.SaveChanges();
                 return true;
             }

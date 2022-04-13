@@ -29,7 +29,7 @@ namespace CarPartsShoppingList.Data
 
             builder.Entity<ShoppingListItem>()
                 .Property(x => x.IsChecked)
-                .HasDefaultValue(true);
+                .HasDefaultValue(false);    
 
             builder.Entity<ShoppingListItem>()
                 .Property(x => x.Name)
