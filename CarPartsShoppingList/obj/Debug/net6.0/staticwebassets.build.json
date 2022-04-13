@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "jN/iBe7n77mi2AeQeqKkmkapBkUAvTDK/uee6iaTTUM=",
+  "Hash": "n8Us0KwzAtP3kwZ+/KyHXSr5JPi0bD50hMhiEl8xG1Q=",
   "Source": "CarPartsShoppingList",
   "BasePath": "_content/CarPartsShoppingList",
   "Mode": "Default",
@@ -5149,6 +5149,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\plugins\\select2\\js\\select2.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\wwwroot\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.css",
+      "SourceId": "CarPartsShoppingList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\wwwroot\\",
+      "BasePath": "_content/CarPartsShoppingList",
+      "RelativePath": "plugins/select2-bootstrap4-theme/select2-bootstrap4.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.css"
+    },
+    {
+      "Identity": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\wwwroot\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.min.css",
+      "SourceId": "CarPartsShoppingList",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\wwwroot\\",
+      "BasePath": "_content/CarPartsShoppingList",
+      "RelativePath": "plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\plugins\\select2-bootstrap4-theme\\select2-bootstrap4.min.css"
     },
     {
       "Identity": "C:\\Users\\Georgi\\source\\repos\\Banov01\\My-web-Proj\\CarPartsShoppingList\\wwwroot\\plugins\\toastr\\toastr.css",

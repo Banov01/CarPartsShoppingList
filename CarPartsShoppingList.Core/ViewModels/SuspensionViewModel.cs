@@ -9,7 +9,7 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [Required]
         [DisplayName("Suspension name")]
-        [StringLength(12)]
+        [StringLength(20)]
         public string SuspensionName { get; set; }
 
         [DisplayName("Suspension price")]

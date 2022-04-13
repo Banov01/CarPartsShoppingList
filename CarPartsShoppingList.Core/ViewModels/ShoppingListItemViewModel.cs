@@ -10,7 +10,7 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [Required]
         [DisplayName("Shopping list name")]
-        [StringLength(15)]
+        [StringLength(25)]
         public string ShoppingListName { get; set; }
 
         [DisplayName("ProductName")]
@@ -22,13 +22,13 @@ namespace CarPartsShoppingList.Core.ViewModels
         public string ApplicationUserId { get; set; }
 
         [DisplayName("Suspension")]
-        public List<int> Suspension { get; set; }
+        public int Suspension { get; set; }
 
         [DisplayName("Transmision")]
-        public List<int> Transmision { get; set; }
+        public int Transmision { get; set; }
 
         [DisplayName("Engine")]
-        public List<int> Engine { get; set; }
+        public int Engine { get; set; }
 
         [DisplayName("Price")]
         public decimal Price { get; set; }

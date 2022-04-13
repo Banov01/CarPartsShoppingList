@@ -9,7 +9,7 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [Required]
         [DisplayName("Engine name")]
-        [StringLength(15)]
+        [StringLength(20)]
         public string EngineName { get; set; }
 
         [Required]

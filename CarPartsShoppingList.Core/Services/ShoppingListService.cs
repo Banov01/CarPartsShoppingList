@@ -19,14 +19,14 @@ namespace CarPartsShoppingList.Core.Services
                 ApplicationUserId = model.ApplicationUserId,
                 Name = model.ShoppingListName
             };
-            
+
             shoppingList.ShoppingListItems.Add(
              new ShoppingListItem()
-            {
-                EngineId = model.Engine[0],
-                SuspensionId = model.Suspension[0],
-                TransmissionId=model.Transmision[0],
-            });
+             {
+                 EngineId = model.Engine,
+                 SuspensionId = model.Suspension,
+                 TransmissionId = model.Transmision,
+             });
 
             await this.repo.AddAsync(shoppingList);
             await this.repo.SaveChangesAsync();
@@ -53,7 +53,7 @@ namespace CarPartsShoppingList.Core.Services
                     Id = x.Id,
                     ShoppingListName = x.Name,
                     IsPurchased = x.IsChecked,
-                    
+
                 })
                 .FirstOrDefault();
         }
@@ -112,8 +112,8 @@ namespace CarPartsShoppingList.Core.Services
             return repo.AllReadonly<ShoppingList>()
                 .Select(x => new ShoppingListViewModel()
                 {
-                    Id=x.Id,
-                    ShoppingListName=x.Name,
+                    Id = x.Id,
+                    ShoppingListName = x.Name,
                 })
                 .AsQueryable();
         }
