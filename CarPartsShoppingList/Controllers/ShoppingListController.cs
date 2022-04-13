@@ -40,6 +40,10 @@ namespace CarPartsShoppingList.Controllers
             var model = new List<ShoppingListItemViewModel>();
             var tableViewModel = shoppingListService.GetShoppingListItems(id);
 
+            if (tableViewModel == null) {
+                throw new Exception("Result is not available.");
+            }
+
             return View(tableViewModel);
         }
 

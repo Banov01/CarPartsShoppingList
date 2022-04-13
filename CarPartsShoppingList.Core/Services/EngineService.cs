@@ -12,11 +12,6 @@ namespace CarPartsShoppingList.Core.Services
         {
         }
 
-        public List<SelectListItem> GetDropDownList()
-        {
-            throw new NotImplementedException();
-        }
-
         public EngineViewModel GetEngineModel(int id)
         {
             return repo.AllReadonly<Engine>()
@@ -32,7 +27,6 @@ namespace CarPartsShoppingList.Core.Services
                     EngineCategory = x.EngineCategory,
                 })
                 .FirstOrDefault();
-
         }
 
         public IQueryable<EngineViewModel> GetEngines()
@@ -69,12 +63,10 @@ namespace CarPartsShoppingList.Core.Services
                     entity.Name = model.EngineName;
                     entity.Price = model.EnginePrice;
                 }
-
                 else
                 {
                     entity = new Engine();
                     {
-                        
                         entity.Cilinders = model.Cilinders;
                         entity.Cubature = model.Cubature;
                         entity.EngineCategory = model.EngineCategory;
@@ -88,10 +80,9 @@ namespace CarPartsShoppingList.Core.Services
                 repo.SaveChanges();
                 result = true;
             }
-
-            catch (Exception)
+            catch (Exception ex)
             {
-                throw new ArgumentException("Cant save data");
+                throw new ArgumentNullException();
             }
             return result;
         }
