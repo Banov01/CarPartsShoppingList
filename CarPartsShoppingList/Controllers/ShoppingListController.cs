@@ -65,6 +65,7 @@ namespace CarPartsShoppingList.Controllers
         [HttpPost]
         public async Task<IActionResult> Add(ShoppingListItemViewModel model)
         {
+            GetViewBags();
             if (!ModelState.IsValid)
             {
                 return View(model);

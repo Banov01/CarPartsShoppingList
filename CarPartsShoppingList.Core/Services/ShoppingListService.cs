@@ -19,14 +19,14 @@ namespace CarPartsShoppingList.Core.Services
                 ApplicationUserId = model.ApplicationUserId,
                 Name = model.ShoppingListName
             };
-
+            
             shoppingList.ShoppingListItems.Add(
              new ShoppingListItem()
-             {
-                 EngineId = model.Engine,
-                 SuspensionId = model.Suspension,
-                 TransmissionId = model.Transmision,
-             });
+            {
+                EngineId = model.Engine,
+                SuspensionId = model.Suspension,
+                TransmisionId=model.Transmision,
+            });
 
             await this.repo.AddAsync(shoppingList);
             await this.repo.SaveChangesAsync();
@@ -53,20 +53,19 @@ namespace CarPartsShoppingList.Core.Services
                     Id = x.Id,
                     ShoppingListName = x.Name,
                     IsPurchased = x.IsChecked,
-
+                    
                 })
                 .FirstOrDefault();
         }
 
-        public List<ShoppingListItemViewModel> GetShoppingListItems(int shoppingListId)
+        public List<ShoppingListItemReviewViewModel> GetShoppingListItems(int shoppingListId)
         {
             var Engines = repo.AllReadonly<ShoppingListItem>()
                 .Include(x => x.Engine)
                 .Where(x => x.ShoppingListId == shoppingListId)
-                .Select(x => new ShoppingListItemViewModel()
+                .Select(x => new ShoppingListItemReviewViewModel()
                 {
                     Id = x.Id,
-                    ShoppingListName = x.Name,
                     ProductName = x.Engine.Name,
                     Price = x.Engine.Price,
                     Code = x.Engine.Code,
@@ -76,10 +75,9 @@ namespace CarPartsShoppingList.Core.Services
             var Suspensions = repo.AllReadonly<ShoppingListItem>()
                   .Include(x => x.Suspension)
                   .Where(x => x.ShoppingListId == shoppingListId)
-                  .Select(x => new ShoppingListItemViewModel()
+                  .Select(x => new ShoppingListItemReviewViewModel()
                   {
                       Id = x.Id,
-                      ShoppingListName = x.Name,
                       ProductName = x.Suspension.Name,
                       Price = x.Suspension.Price,
                       Code = x.Suspension.Code,
@@ -89,17 +87,16 @@ namespace CarPartsShoppingList.Core.Services
             var Transmisions = repo.AllReadonly<ShoppingListItem>()
                 .Include(x => x.Transmision)
                 .Where(x => x.ShoppingListId == shoppingListId)
-                .Select(x => new ShoppingListItemViewModel()
+                .Select(x => new ShoppingListItemReviewViewModel()
                 {
                     Id = x.Id,
-                    ShoppingListName = x.Name,
                     ProductName = x.Transmision.Name,
                     Price = x.Transmision.Price,
                     Code = x.Transmision.Code,
                     IsPurchased = x.IsChecked,
                 });
 
-            var list = new List<ShoppingListItemViewModel>();
+            var list = new List<ShoppingListItemReviewViewModel>();
             list.AddRange(Engines);
             list.AddRange(Suspensions);
             list.AddRange(Transmisions);
@@ -112,8 +109,8 @@ namespace CarPartsShoppingList.Core.Services
             return repo.AllReadonly<ShoppingList>()
                 .Select(x => new ShoppingListViewModel()
                 {
-                    Id = x.Id,
-                    ShoppingListName = x.Name,
+                    Id=x.Id,
+                    ShoppingListName=x.Name,
                 })
                 .AsQueryable();
         }

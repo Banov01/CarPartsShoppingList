@@ -8,7 +8,7 @@ namespace CarPartsShoppingList.Core.Contracts
 
         IQueryable<ShoppingListViewModel> GetShoppingLists();
 
-        List<ShoppingListItemViewModel> GetShoppingListItems(int shoppingListId);
+        List<ShoppingListItemReviewViewModel> GetShoppingListItems(int shoppingListId);
 
         Task<bool> SaveData(ShoppingListViewModel model);
 

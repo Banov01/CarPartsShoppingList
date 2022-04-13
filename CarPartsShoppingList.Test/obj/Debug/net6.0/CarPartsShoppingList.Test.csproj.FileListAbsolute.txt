@@ -1,4 +1,9 @@
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.csproj.AssemblyReference.cache
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.AssemblyInfoInputs.cache
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.AssemblyInfo.cs
+C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.csproj.CoreCompileInputs.cache
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\testhost.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\CarPartsShoppingList.deps.json
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\CarPartsShoppingList.runtimeconfig.json
@@ -348,11 +353,6 @@ C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\D
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\CarPartsShoppingList.Core.pdb
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\CarPartsShoppingList.pdb
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\bin\Debug\net6.0\CarPartsShoppingList.Infrastructure.pdb
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.csproj.AssemblyReference.cache
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.AssemblyInfoInputs.cache
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.AssemblyInfo.cs
-C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.csproj.CoreCompileInputs.cache
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.csproj.CopyComplete
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\CarPartsShoppingList.Test.dll
 C:\Users\Georgi\source\repos\Banov01\My-web-Proj\CarPartsShoppingList.Test\obj\Debug\net6.0\refint\CarPartsShoppingList.Test.dll

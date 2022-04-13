@@ -1,5 +1,5 @@
 ﻿@using CarPartsShoppingList.Infrastructure.Data.Models
-@model List<ShoppingListItemViewModel>
+@model List<ShoppingListItemReviewViewModel>
 
 @{
     ViewData["Title"] = "Shopping list items";
@@ -14,7 +14,7 @@
             <th>Price</th>
             <th>IsPurchased</th>
         </tr>
-        @foreach (ShoppingListItemViewModel shoppingListItem in Model)
+        @foreach (ShoppingListItemReviewViewModel shoppingListItem in Model)
         {
             <tr>
                 <td>@shoppingListItem.ProductName</td>

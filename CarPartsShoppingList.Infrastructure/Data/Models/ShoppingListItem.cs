@@ -9,7 +9,7 @@ namespace CarPartsShoppingList.Infrastructure.Data.Models
     {
         public int? ShoppingListId { get; set; }
         public int? EngineId { get; set;}
-        public int? TransmissionId { get; set;}
+        public int? TransmisionId { get; set;}
         public int? SuspensionId { get; set;}
 
         [ForeignKey(nameof(ShoppingListId))]
@@ -18,7 +18,7 @@ namespace CarPartsShoppingList.Infrastructure.Data.Models
         [ForeignKey(nameof(EngineId))]
         public Engine Engine { get; set;}
 
-        [ForeignKey(nameof(TransmissionId))]
+        [ForeignKey(nameof(TransmisionId))]
         public Transmision Transmision { get; set;}
 
         [ForeignKey(nameof(SuspensionId))]

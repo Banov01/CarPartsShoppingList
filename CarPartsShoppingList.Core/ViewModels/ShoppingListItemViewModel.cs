@@ -1,5 +1,4 @@
-﻿using CarPartsShoppingList.Infrastructure.Data.Models;
-using System.ComponentModel;
+﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
 namespace CarPartsShoppingList.Core.ViewModels
@@ -10,14 +9,8 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [Required]
         [DisplayName("Shopping list name")]
-        [StringLength(25)]
+        [StringLength(15)]
         public string ShoppingListName { get; set; }
-
-        [DisplayName("ProductName")]
-        public string ProductName { get; set; }
-
-        [DisplayName("Code")]
-        public string Code { get; set; }
 
         public string ApplicationUserId { get; set; }
 
@@ -29,9 +22,6 @@ namespace CarPartsShoppingList.Core.ViewModels
 
         [DisplayName("Engine")]
         public int Engine { get; set; }
-
-        [DisplayName("Price")]
-        public decimal Price { get; set; }
 
         [DisplayName("Purchased")]
         public bool IsPurchased { get; set; }
