@@ -9,13 +9,12 @@ namespace CarPartsShoppingList.Test
     public class UserServiceTest
     {
         private UserService userService;
-        private Mock<IApplicatioDbRepository> repo;
+        private Mock<IApplicatioDbRepository> iRepository;
         [SetUp]
         public void Setup()
         {
-            var repo = new Mock<IApplicatioDbRepository>();
-
-            userService = new UserService(repo.Object);
+            var iRepository = new Mock<IApplicatioDbRepository>();
+            userService = new UserService(iRepository.Object);
         }
 
         [Test]

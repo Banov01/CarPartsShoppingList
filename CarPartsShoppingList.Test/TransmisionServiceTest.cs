@@ -20,7 +20,6 @@ namespace CarPartsShoppingList.Test
         public void Setup()
         {
             var iRepository = new Mock<IRepository>();
-
             transmisionService = new TransmisionService(iRepository.Object);
         }
 
