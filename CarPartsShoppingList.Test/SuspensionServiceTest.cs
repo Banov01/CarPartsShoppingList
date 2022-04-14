@@ -1,7 +1,9 @@
 using CarPartsShoppingList.Core.Services;
+using CarPartsShoppingList.Core.ViewModels;
 using CarPartsShoppingList.Infrastructure.Data.Common;
 using Moq;
 using NUnit.Framework;
+using System.Linq;
 
 namespace CarPartsShoppingList.Test
 {
@@ -24,6 +26,13 @@ namespace CarPartsShoppingList.Test
         {
             var result = suspensionService.GetSuspensions();
             Assert.IsNotNull(result, "Suspension is null.");
+        }
+
+        [Test]
+        public void Get_Suspensions_Is_Empty()
+        {
+            IQueryable<SuspensionViewModel> result = suspensionService.GetSuspensions();
+            Assert.IsEmpty(result, "Suspension list is not empty.");
         }
     }
 }

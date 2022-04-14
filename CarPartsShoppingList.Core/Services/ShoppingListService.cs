@@ -35,7 +35,7 @@ namespace CarPartsShoppingList.Core.Services
             }
             catch (Exception)
             {
-                throw;
+                throw new ArgumentException("Cant add it");
             }
         }
 

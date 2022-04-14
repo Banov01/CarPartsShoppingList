@@ -80,9 +80,9 @@ namespace CarPartsShoppingList.Core.Services
                 repo.SaveChanges();
                 result = true;
             }
-            catch (Exception ex)
+            catch (Exception)
             {
-                throw new ArgumentNullException();
+                throw new ArgumentNullException("Can't save data.");
             }
             return result;
         }
