@@ -62,7 +62,6 @@ namespace CarPartsShoppingList.Core.Services
                     itemId = x.Id,
                     ShoppingListName = x.Name,
                     IsPurchased = x.IsChecked,
-
                 })
                 .FirstOrDefault();
         }

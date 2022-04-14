@@ -35,7 +35,13 @@ namespace CarPartsShoppingList.Test
         }
 
         //[Test]
-        //public void Save_Data_Should_Throw()
+        //public void Save_Add_Should_Throw()
+        //{
+        //    Assert.Catch<ArgumentException>(() => shoppingListService.Add(), "It's not the exact exception.");
+        //}
+
+        //[Test]
+        //public void Save_Save_Data_Should_Throw()
         //{
         //    Assert.Catch<ArgumentException>(() => shoppingListService.SaveData(), "It's not the exact exception.");
         //}
