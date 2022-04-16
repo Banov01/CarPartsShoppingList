@@ -20,6 +20,25 @@ namespace CarPartsShoppingList.Core.Services
             return await repo.GetByIdAsync<ApplicationUser>(id);
         }
 
+        public async Task<bool> AddAsync(UserEditViewModel model)
+        {
+            var exist = await repo.GetByIdAsync<ApplicationUser>(model.Id);
+
+            if (exist != null)
+            {
+                return false;
+            }
+
+            await this.repo.AddAsync(new ApplicationUser()
+            {
+                Id = model.Id,
+                FirstName = model.FirstName,
+                LastName = model.LastName,
+            });
+            await this.repo.SaveChangesAsync();
+            return true;
+        }
+
         public async Task<UserEditViewModel> GetUserForEdit(string id)
         {
             var user = await repo.GetByIdAsync<ApplicationUser>(id);

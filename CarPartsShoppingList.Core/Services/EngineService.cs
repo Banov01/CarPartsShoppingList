@@ -52,10 +52,9 @@ namespace CarPartsShoppingList.Core.Services
 
             try
             {
-                if (model.Id > 0)
+                entity = await repo.GetByIdAsync<Engine>(model.Id);
+                if (entity != null)
                 {
-                    entity = await repo.GetByIdAsync<Engine>(model.Id);
-
                     entity.Cilinders = model.Cilinders;
                     entity.Cubature = model.Cubature;
                     entity.EngineCategory = model.EngineCategory;

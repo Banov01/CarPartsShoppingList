@@ -1,27 +1,40 @@
 using CarPartsShoppingList.Core.Services;
+using CarPartsShoppingList.Data;
 using CarPartsShoppingList.Infrastructure.Data.Repositories;
-using Moq;
+using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
+using System.Threading.Tasks;
 
 namespace CarPartsShoppingList.Test
 {
     [TestFixture]
     public class UserServiceTest
     {
+        private ApplicationDbContext dbContext;
         private UserService userService;
-        private Mock<IApplicatioDbRepository> iRepository;
+        private IApplicatioDbRepository iRepository;
         [SetUp]
         public void Setup()
         {
-            var iRepository = new Mock<IApplicatioDbRepository>();
-            userService = new UserService(iRepository.Object);
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+               .UseInMemoryDatabase("MemoryDB").Options;
+            this.dbContext = new ApplicationDbContext(options);
+            this.iRepository = new ApplicatioDbRepository(dbContext);
+            userService = new UserService(iRepository);
         }
 
         [Test]
-        public void Get_User_By_Id_Is_Not_NUll()
+        public async Task Get_User_By_Id_Is_Not_NUll()
         {
-            var result = userService.GetUserById("");
-            Assert.That(result, Is.Not.Null, "User id is null.");
+            await userService.AddAsync(new Core.ViewModels.UserEditViewModel()
+            {
+                Id = "first user id",
+                FirstName = "First name",
+                LastName = "Last name",
+
+            });
+            var result = await userService.GetUserById("first user id");
+            Assert.NotNull(result);
         }
 
         [Test]

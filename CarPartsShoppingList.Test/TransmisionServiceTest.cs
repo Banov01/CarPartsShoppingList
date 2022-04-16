@@ -1,10 +1,13 @@
 using CarPartsShoppingList.Core.Contracts;
 using CarPartsShoppingList.Core.Services;
 using CarPartsShoppingList.Core.ViewModels;
+using CarPartsShoppingList.Data;
 using CarPartsShoppingList.Infrastructure.Data.Common;
 using CarPartsShoppingList.Infrastructure.Data.Models;
+using Microsoft.EntityFrameworkCore;
 using Moq;
 using NUnit.Framework;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -13,14 +16,18 @@ namespace CarPartsShoppingList.Test
     [TestFixture]
     public class TransmisionServiceTest
     {
+        private ApplicationDbContext dbContext;
         private TransmisionService transmisionService;
-        private Mock<IRepository> iRepository;
+        private IRepository iRepository;
 
         [SetUp]
         public void Setup()
         {
-            var iRepository = new Mock<IRepository>();
-            transmisionService = new TransmisionService(iRepository.Object);
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+                .UseInMemoryDatabase("MemoryDB").Options;
+            this.dbContext = new ApplicationDbContext(options);
+            this.iRepository = new Repository(dbContext);
+            transmisionService = new TransmisionService(iRepository);
         }
 
         [Test]
@@ -31,32 +38,25 @@ namespace CarPartsShoppingList.Test
         }
 
         [Test]
-        public void Get_Transmisions_Is_Empty()
+        public void Get_Transmisions_Is_Not_Empty()
         {
             IQueryable<TransmisionViewModel> result = transmisionService.GetTransmisions();
-            Assert.IsEmpty(result, "Transmision list is not empty.");
+            Assert.IsNotEmpty(result, "Transmision list is not empty.");
         }
 
-        //[Test]
-        //public async Task Get_Engine_Match()
-        //{
-        //    Mock<ITransmisionService> transmisionService = new Mock<ITransmisionService>();
-        //    transmisionService
-        //        .Setup(x => x.GetTransmisions());
+        [Test]
+        public async Task Get_Transmision_Match()
+        {
+            await this.transmisionService.SaveData(new TransmisionViewModel()
+            {
+                Id = 1,
+                TransmisionName = "Test",
+                TransmisionPrice = 1M,
+                TransmisionCode = "code"
+            });
 
-        //    Mock<IRepository> repository = new Mock<IRepository>();
-        //    repository
-        //        .Setup(y =>y.AllReadonly<Transmision>())
-        //        .Returns(new List<TransmisionViewModel>()
-        //        {
-        //            new TransmisionViewModel()
-        //            { 
-        //                Id = 1,
-        //                TransmisionName = "VW Golf transmision",
-        //                TransmisionCode ="898765",
-        //                TransmisionPrice =299,
-        //            }
-        //        });
-        //}
+            var result = transmisionService.GetTransmisionModel(1);
+            Assert.NotNull(result);
+        }
     }
 }

@@ -5,10 +5,10 @@ i:{00000000-0000-0000-0000-000000000000}:CarPartsShoppingList.Core
 i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\net6.0\carpartsshoppinglist.core.dll
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\bin\debug\net6.0\carpartsshoppinglist.core.dll
 ++Dependencies
-i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:>1494
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>1493
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:>1925
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>1926
 i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>1927
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2698
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2702
 ++Constants
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.core\constants\
 ++Contracts
@@ -121,10 +121,10 @@ i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my
 i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.test\microsoft.netcore.app
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\microsoft.netcore.app
 ++Microsoft.AspNetCore.Mvc.Core (2.2.5)
-i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:>2744
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2748
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:>2761
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2767
 ++Microsoft.AspNetCore.Mvc.ViewFeatures (2.2.0)
-i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:>2742
+i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:>2758
 ++CarPartsShoppingList.Infrastructure
 i:{171b33dd-6420-4123-9fca-bd0c83d67a88}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\bin\debug\net6.0\carpartsshoppinglist.infrastructure.dll
 i:{00000000-0000-0000-0000-000000000000}:CarPartsShoppingList.Infrastructure
@@ -134,6 +134,8 @@ i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\common\
 ++IRepository.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\common\irepository.cs
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.test\ideletableentity\irepository.cs
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.test\irepository.cs
 ++Repository.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\common\repository.cs
 ++Identity
@@ -143,6 +145,10 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\
 ++Repositories
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\repositories\
+++ApplicatioDbRepository.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\repositories\applicatiodbrepository.cs
+++IApplicatioDbRepository.cs
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\repositories\iapplicatiodbrepository.cs
 ++ApplicationDbContext.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\applicationdbcontext.cs
 ++Migrations
@@ -161,10 +167,6 @@ i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\suspension.cs
 ++Transmision.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\models\transmision.cs
-++ApplicatioDbRepository.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\repositories\applicatiodbrepository.cs
-++IApplicatioDbRepository.cs
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\data\repositories\iapplicatiodbrepository.cs
 ++20220307110804_FirstMigration.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220307110804_firstmigration.cs
 ++20220310080540_UpdateDatabase.cs
@@ -196,16 +198,16 @@ i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my
 ++ApplicationDbContextModelSnapshot.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\applicationdbcontextmodelsnapshot.cs
 ++Microsoft.AspNetCore.Identity.EntityFrameworkCore (6.0.2)
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>2777
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2747
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>2765
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2764
 ++Microsoft.EntityFrameworkCore.Design (6.0.2)
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>2776
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>2760
 ++Microsoft.EntityFrameworkCore.SqlServer (6.0.2)
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>2775
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2741
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>2757
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2756
 ++Microsoft.EntityFrameworkCore.Tools (6.0.2)
-i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>2778
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2750
+i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:>2768
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2769
 ++20220307110804_FirstMigration.Designer.cs
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220307110804_firstmigration.designer.cs
 ++20220310080540_UpdateDatabase.Designer.cs
@@ -236,6 +238,12 @@ i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my
 i:{ddb8ee3c-dc19-4a67-a788-f73cf4f9f52c}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.infrastructure\migrations\20220413105931_setischeckedtofalse.designer.cs
 ++CarPartsShoppingList.Test
 i:{00000000-0000-0000-0000-000000000000}:CarPartsShoppingList.Test
+++IDeletableEntity
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.test\ideletableentity\
+++EfDeletableEntityRepository.cs
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.test\ideletableentity\efdeletableentityrepository.cs
+++IDeletableEntityRepository.cs
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.test\ideletableentity\ideletableentityrepository.cs
 ++EngineServiceTest.cs
 i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist.test\engineservicetest.cs
 ++ShoppingListServiceTest.cs
@@ -262,20 +270,26 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\.nuget\packages\microso
 i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\.nuget\packages\microsoft.codeanalysis.analyzers\3.3.2\analyzers\dotnet\cs\microsoft.codeanalysis.csharp.analyzers.dll
 ++coverlet.collector (3.1.0)
-i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2762
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2779
+++Microsoft.Data.Sqlite.Core (6.0.4)
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2797
+++Microsoft.EntityFrameworkCore.InMemory (6.0.2)
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2798
+++Microsoft.EntityFrameworkCore.Sqlite (6.0.2)
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2799
 ++Microsoft.NET.Test.Sdk (16.11.0)
-i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2755
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2766
 ++Moq (4.17.2)
-i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2761
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2777
 ++NUnit (3.13.2)
-i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2756
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2770
 ++NUnit3TestAdapter (4.0.0)
-i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2759
+i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:>2773
 ++CarPartsShoppingList
 i:{58d6c01e-91b5-45b7-b041-8e490c97afdc}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\bin\debug\net6.0\carpartsshoppinglist.dll
 i:{00000000-0000-0000-0000-000000000000}:CarPartsShoppingList
 ++Connected Services 
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2699
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2703
 ++Properties
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\
 ++wwwroot
@@ -299,7 +313,7 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 ++ScaffoldingReadMe.txt
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\scaffoldingreadme.txt
 ++SQL Server Express LocalDB (Local) (ConnectionStrings:DefaultConnection)
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2779
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2783
 ++launchSettings.json
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\launchsettings.json
 ++serviceDependencies.json
@@ -356,6 +370,7 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\admin\views\home\
 ++Shared
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shared\
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\admin\views\shared\
 ++ShoppingList
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\views\shoppinglist\
 ++_ViewImports.cshtml
@@ -383,13 +398,13 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\program files\dotnet\sdk\6.0.201\sdk
 ++Microsoft.AspNetCore.App
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\microsoft.aspnetcore.app
 ++Microsoft.AspNetCore.Authentication.Facebook (6.0.2)
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2743
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2759
 ++Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore (6.0.2)
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2745
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2762
 ++Microsoft.AspNetCore.Identity.UI (6.0.2)
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2753
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2774
 ++Microsoft.VisualStudio.Web.CodeGeneration.Design (6.0.2)
-i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2751
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:>2771
 ++serviceDependencies.local.json
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\properties\servicedependencies.local.json
 ++alt
@@ -704,6 +719,8 @@ i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\admin\views\suspension\edit.cshtml
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\admin\views\transmision\edit.cshtml
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\admin\views\user\edit.cshtml
+++_AdminLayout.cshtml
+i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\admin\views\shared\_adminlayout.cshtml
 ++ManageUsers.cshtml
 i:{4e78a31f-51f8-434a-a486-fa0e8a1f7640}:c:\users\georgi\source\repos\banov01\my-web-proj\carpartsshoppinglist\areas\admin\views\user\manageusers.cshtml
 ++Roles.cshtml

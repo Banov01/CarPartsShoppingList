@@ -34,10 +34,5 @@ namespace CarPartsShoppingList.Test
             IQueryable<EngineViewModel> result = engineService.GetEngines();
             Assert.IsEmpty(result, "Engine list is not empty.");
         }
-
-        [Test]
-        public void Get_Engines_Match()
-        {
-        }
     }
 }

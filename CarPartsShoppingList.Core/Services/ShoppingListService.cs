@@ -11,8 +11,8 @@ namespace CarPartsShoppingList.Core.Services
         public ShoppingListService(IRepository _repo) : base(_repo)
         {
         }
-
-        public async Task Add(ShoppingListItemViewModel model)
+        
+        public async Task<bool> Add(ShoppingListItemViewModel model)
         {
             try
             {
@@ -32,6 +32,7 @@ namespace CarPartsShoppingList.Core.Services
 
                 await this.repo.AddAsync(shoppingList);
                 await this.repo.SaveChangesAsync();
+                return true;
             }
             catch (Exception)
             {

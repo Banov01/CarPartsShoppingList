@@ -45,10 +45,9 @@ namespace CarPartsShoppingList.Core.Services
 
             try
             {
-                if (model.Id > 0)
+                entity = await repo.GetByIdAsync<Suspension>(model.Id);
+                if (entity != null)
                 {
-                    entity = await repo.GetByIdAsync<Suspension>(model.Id);
-
                     entity.Name = model.SuspensionName;
                     entity.Price=model.SuspensionPrice;
                     entity.Code=model.SuspensionCode;
