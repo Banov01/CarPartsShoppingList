@@ -34,10 +34,10 @@ namespace CarPartsShoppingList.Test
         }
 
         [Test]
-        public void Get_Suspensions_Is_Empty()
+        public void Get_Suspensions_Is_Not_Empty()
         {
             IQueryable<SuspensionViewModel> result = suspensionService.GetSuspensions();
-            Assert.IsEmpty(result, "Suspension list is not empty.");
+            Assert.IsNotEmpty(result, "Suspension list is not empty.");
         }
 
         [Test]

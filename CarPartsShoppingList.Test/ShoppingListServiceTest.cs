@@ -87,7 +87,7 @@ namespace CarPartsShoppingList.Test
                 Suspension = 1,
             });
 
-            Assert.True(response);
+            Assert.True(response, "Can't add to shopping list.");
         }
 
         [Test]
