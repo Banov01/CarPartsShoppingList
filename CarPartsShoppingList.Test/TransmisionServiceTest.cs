@@ -1,13 +1,9 @@
-using CarPartsShoppingList.Core.Contracts;
 using CarPartsShoppingList.Core.Services;
 using CarPartsShoppingList.Core.ViewModels;
 using CarPartsShoppingList.Data;
 using CarPartsShoppingList.Infrastructure.Data.Common;
-using CarPartsShoppingList.Infrastructure.Data.Models;
 using Microsoft.EntityFrameworkCore;
-using Moq;
 using NUnit.Framework;
-using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 

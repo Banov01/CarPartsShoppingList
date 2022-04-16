@@ -3,9 +3,7 @@ using CarPartsShoppingList.Data;
 using CarPartsShoppingList.Infrastructure.Data.Common;
 using CarPartsShoppingList.Infrastructure.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Moq;
 using NUnit.Framework;
-using System;
 using System.Threading.Tasks;
 
 namespace CarPartsShoppingList.Test

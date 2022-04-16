@@ -1,24 +1,29 @@
-using CarPartsShoppingList.Core.Contracts;
 using CarPartsShoppingList.Core.Services;
 using CarPartsShoppingList.Core.ViewModels;
+using CarPartsShoppingList.Data;
 using CarPartsShoppingList.Infrastructure.Data.Common;
-using Moq;
+using Microsoft.EntityFrameworkCore;
 using NUnit.Framework;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace CarPartsShoppingList.Test
 {
     [TestFixture]
     public class EngineServiceTest
     {
+        private ApplicationDbContext dbContext;
         private EngineService engineService;
-        private Mock<IRepository> iRepository;
+        private IRepository iRepository;
 
         [SetUp]
         public void Setup()
         {
-            iRepository = new Mock<IRepository>();
-            engineService = new EngineService(iRepository.Object);
+            var options = new DbContextOptionsBuilder<ApplicationDbContext>()
+            .UseInMemoryDatabase("MemoryDB").Options;
+            this.dbContext = new ApplicationDbContext(options);
+            this.iRepository = new Repository(dbContext);
+            engineService = new EngineService(iRepository);
         }
 
         [Test]
@@ -33,6 +38,24 @@ namespace CarPartsShoppingList.Test
         {
             IQueryable<EngineViewModel> result = engineService.GetEngines();
             Assert.IsEmpty(result, "Engine list is not empty.");
+        }
+
+        [Test]
+        public async Task Get_Engine_Match()
+        {
+            await this.engineService.SaveData(new EngineViewModel()
+            {
+                Id = 1,
+                EngineName="test name",
+                EngineCategory="test category",
+                Cilinders=5,
+                Cubature=2,
+                EngineCode="test code",
+                EnginePrice=8M,
+            });
+
+            var result = engineService.GetEngineModel(1);
+            Assert.NotNull(result);
         }
     }
 }
